@@ -29,6 +29,7 @@
 			<td><textarea rows="10" cols="50" name="productDesc" ></textarea></td>
 		</tr>
 	</table>
+	<input type="submit" value="상품 등록"/>
 	</form>
 </body>
 </html>

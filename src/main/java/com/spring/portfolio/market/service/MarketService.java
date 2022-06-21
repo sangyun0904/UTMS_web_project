@@ -4,6 +4,6 @@ import com.spring.portfolio.market.dto.ProductDto;
 
 public interface MarketService {
 
-	public void addProduct(ProductDto productDto);
+	public void addProduct(ProductDto productDto) throws Exception;
 
 }

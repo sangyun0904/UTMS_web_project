@@ -10,11 +10,11 @@ import com.spring.portfolio.member.dto.MemberDto;
 public class MemberDaoimpl implements MemberDao{
 
 	@Autowired
-	private SqlSession sqlsession;
+	private SqlSession sqlSession;
 	
 	@Override
 	public void insertNewMember(MemberDto memberDto) throws Exception {
-		sqlsession.insert("mapper.member.insertNewMember" , memberDto);
+		sqlSession.insert("mapper.member.insertNewMember" , memberDto);
 	}
 
 }

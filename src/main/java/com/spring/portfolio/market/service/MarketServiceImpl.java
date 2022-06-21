@@ -13,9 +13,8 @@ public class MarketServiceImpl implements MarketService{
 	private MarketDao marketDao;
 
 	@Override
-	public void addProduct(ProductDto productDto) {
-		// TODO Auto-generated method stub
-		
+	public void addProduct(ProductDto productDto) throws Exception{
+		marketDao.insertProduct(productDto);
 	}
 
 }
