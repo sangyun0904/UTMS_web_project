@@ -1,5 +1,7 @@
 package com.spring.portfolio.market.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,11 @@ public class MarketServiceImpl implements MarketService{
 	@Override
 	public void addProduct(ProductDto productDto) throws Exception{
 		marketDao.insertProduct(productDto);
+	}
+
+	@Override
+	public List<ProductDto> getProductList() throws Exception {
+		return marketDao.selectProductList();
 	}
 
 }

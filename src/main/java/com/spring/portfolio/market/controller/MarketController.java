@@ -1,5 +1,7 @@
 package com.spring.portfolio.market.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,18 @@ public class MarketController {
 	
 	@Autowired
 	private MarketService marketService;
+	
+	@RequestMapping(value="/productList" , method=RequestMethod.GET)
+	public ModelAndView productList() throws Exception {
+		
+		List<ProductDto> productList = marketService.getProductList();
+		
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/market/marketMain");
+		mv.addObject("productList", productList);
+		
+		return mv;
+	}
 	
 	@RequestMapping(value="/uploadProduct", method=RequestMethod.GET)
 	public ModelAndView uploadForm() throws Exception {

@@ -1,5 +1,7 @@
 package com.spring.portfolio.market.dao;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -15,6 +17,12 @@ public class MarketDaoImpl implements MarketDao{
 	@Override
 	public void insertProduct(ProductDto productDto) throws Exception {
 		sqlSession.insert("mapper.market.insertNewProduct" , productDto);
+	}
+
+	@Override
+	public List<ProductDto> selectProductList() throws Exception {
+		List<ProductDto> productList = sqlSession.selectList("mapper.market.getAllProducts");
+		return productList;
 	}
 
 }
