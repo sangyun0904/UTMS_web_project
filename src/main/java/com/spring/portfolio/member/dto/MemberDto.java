@@ -170,4 +170,15 @@ public class MemberDto {
 		this.joinDate = joinDate;
 	}
 	
+	@Override
+	public String toString() {
+		return "MemberDto [memberId=" + memberId + ", memberPw=" + memberPw + ", memberName=" + memberName
+				+ ", memberGender=" + memberGender + ", memberBirthY=" + memberBirthY + ", memberBirthM=" + memberBirthM
+				+ ", memberBirthD=" + memberBirthD + ", memberBirthGn=" + memberBirthGn + ", tel1=" + tel1 + ", tel2="
+				+ tel2 + ", tel3=" + tel3 + ", hp1=" + hp1 + ", hp2=" + hp2 + ", hp3=" + hp3 + ", smsstsYn=" + smsstsYn
+				+ ", email1=" + email1 + ", email2=" + email2 + ", emailstsYn=" + emailstsYn + ", zipcode=" + zipcode
+				+ ", roadAddress=" + roadAddress + ", jibunAddress=" + jibunAddress + ", namujiAddress=" + namujiAddress
+				+ ", joinDate=" + joinDate + "]";
+	}
+	
 }
