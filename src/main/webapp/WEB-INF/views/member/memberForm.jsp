@@ -48,7 +48,7 @@
 </style>
 </head>
 <body>
-	<form action="${contextPath}/member/addMember" method="post">
+	<form action="/portfolio/memberForm" method="post">
 	<h3>회원가입</h3>
 	<table class="table table-bordered table-hover">
 		<colgroup>
