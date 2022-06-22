@@ -238,7 +238,7 @@
 	    </tr>
 	    <tr>
 	        <td colspan="2" align="center">
-	        	이미 회원가입이 되어있다면 ? <a href="${contextPath}/member/loginForm"><strong>로그인하기</strong></a>
+	        	이미 회원가입이 되어있다면 ? <a href="portfolio/loginForm"><strong>로그인하기</strong></a>
 	        </td>
         </tr>                            
      </table>

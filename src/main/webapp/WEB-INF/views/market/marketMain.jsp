@@ -15,7 +15,7 @@
 			<th>업로드 날짜</th>
 			<th>가격</th>
 		</tr>
-		<c:forEach var="product" items="productList">
+		<c:forEach var="product" items="${productList }">
 			<tr align="center">
 				<th>${product.productName }</th>
 				<th>${product.productSeller }</th>
