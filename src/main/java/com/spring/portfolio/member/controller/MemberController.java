@@ -20,6 +20,11 @@ public class MemberController {
 	
 	@Autowired
 	private MemberService memberService;
+	
+	@RequestMapping(value="/login" , method=RequestMethod.GET)
+	public ModelAndView login() throws Exception {
+		return new ModelAndView("/member/loginForm");
+	}
 
 	@RequestMapping(value="/memberForm", method=RequestMethod.GET)
 	public ModelAndView memberForm() throws Exception {
