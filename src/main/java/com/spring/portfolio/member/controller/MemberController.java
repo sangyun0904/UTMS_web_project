@@ -41,8 +41,23 @@ public class MemberController {
 			HttpSession session = request.getSession();
 			session.setAttribute("isLogOn", true);
 			session.setAttribute("memberInfo", memberDto.getMemberId());
-			mv.setViewName("/portfolio/");
+			mv.setViewName("/");
 		}
+		
+		return mv;
+		
+	}
+	
+	@RequestMapping(value="/logout" , method=RequestMethod.GET)
+	public ModelAndView logout(HttpServletRequest request) throws Exception {
+		
+		ModelAndView mv = new ModelAndView();
+		HttpSession session = request.getSession();
+		
+		session.setAttribute("isLogOn", false);
+		session.invalidate(); 
+		
+		mv.setViewName("/");
 		
 		return mv;
 		

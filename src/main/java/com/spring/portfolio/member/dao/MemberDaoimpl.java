@@ -1,5 +1,7 @@
 package com.spring.portfolio.member.dao;
 
+import java.util.Map;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -15,6 +17,11 @@ public class MemberDaoimpl implements MemberDao{
 	@Override
 	public void insertNewMember(MemberDto memberDto) throws Exception {
 		sqlSession.insert("mapper.member.insertNewMember" , memberDto);
+	}
+
+	@Override
+	public MemberDto login(Map<String, String> loginMap) throws Exception {
+		return sqlSession.selectOne("mapper.member.login", loginMap);
 	}
 
 }
