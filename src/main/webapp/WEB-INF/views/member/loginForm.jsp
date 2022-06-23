@@ -333,8 +333,8 @@
 						<form class="mt-4">
 							<!-- Email -->
 							<div class="mb-3">
-								<label class="form-label" for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+								<label class="form-label" for="exampleInputEmail1">ID</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="id">
 							</div>
 							<!-- Password -->
 							<div class="mb-3">
