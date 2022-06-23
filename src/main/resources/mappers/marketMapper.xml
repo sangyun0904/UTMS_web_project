@@ -9,6 +9,7 @@
 					PRODUCT_NAME,
 					PRODUCT_SELLER,
 					PRODUCT_PRICE,
+					PRODUCT_SORT,
 					PRODUCT_DESC,
 					PRODUCT_CREDATE
 				)
@@ -16,6 +17,7 @@
 				#{productName},
 				#{productSeller},
 				#{productPrice},
+				#{productSort},
 				#{productDesc},
 				NOW()
 		);
@@ -26,6 +28,15 @@
 				*
 		FROM
 				T_PRODUCT;
+	</select>
+	
+	<select id="getSortProducts" resultType="ProductDto">
+		SELECT
+				*
+		FROM
+				T_PRODUCT
+		WHERE
+				PRODUCT_SORT = #{categoty}
 	</select>
 	
 </mapper>

@@ -1,6 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="true" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -364,7 +365,7 @@ Main content START -->
 							</div>
 							<div class="card-body px-0 pt-3">
 								<h4 class="card-title"><a href="post-single-4.html" class="btn-link text-reset fw-bold">${product.productName }</a></h4>
-								<p class="card-text">He moonlights difficult engrossed it, sportsmen. Interested has all Devonshire difficulty gay assistance joy. Unaffected at ye of compliment alteration to</p>
+								<p class="card-text">${product.productDesc }</p>
 								<!-- Card info -->
 								<ul class="nav nav-divider align-items-center d-none d-sm-inline-block">
 									<li class="nav-item">
@@ -373,11 +374,12 @@ Main content START -->
 												<div class="avatar avatar-xs">
 													<img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="avatar">
 												</div>
-												<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">${product.productPrice }</a></span>
+												<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">${product.productSeller }</a></span>
 											</div>
 										</div>
 									</li>
-									<li class="nav-item">${product.productCredate }</li>
+									<li class="nav-item"><fmt:formatDate value="${product.productCredate }" pattern="yyyy-MM-dd"/></li>
+									<li class="nav-item">${product.productPrice } 원</li>
 								</ul>
 							</div>
 						</div>
@@ -713,7 +715,7 @@ Footer START -->
 				<img class="light-mode-item" src="assets/images/logo.svg" alt="logo">			
 				<img class="dark-mode-item" src="assets/images/logo-light.svg" alt="logo">
 				<p class="mt-3">The next-generation blog, news, and magazine theme for you to start sharing your stories today! This Bootstrap 5 based theme is ideal for all types of sites that deliver the news.</p>
-				<div class="mt-4">�2022 <a href="https://www.webestica.com/" class="text-reset btn-link" target="_blank">Webestica</a>. All rights reserved
+				<div class="mt-4">©2022 <a href="https://www.webestica.com/" class="text-reset btn-link" target="_blank">Webestica</a>. All rights reserved
 				</div>
 			</div>
 
