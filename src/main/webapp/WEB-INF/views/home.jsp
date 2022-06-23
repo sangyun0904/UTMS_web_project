@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
+<%@ page session="true" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -266,7 +267,7 @@ Header START -->
 					</li>
 
 					<!-- Nav item 5 link-->
-					<li class="nav-item"> <a class="nav-link" href="dashboard.html">Dashboard</a></li>
+					<li class="nav-item"> <a class="nav-link" href="dashboard.html"><c:out value="${sessionScope.memberInfo}"/></a></li>
 				</ul>
 			</div>
 			<!-- Main navbar END -->
@@ -347,6 +348,7 @@ Main content START -->
 			<div class="col-lg-9">
 				<div class="row gy-4">
 					<!-- Card item START -->
+					<c:forEach var="product" items="${productList }">
 					<div class="col-sm-6">
 						<div class="card">
 							<!-- Card img -->
@@ -361,7 +363,7 @@ Main content START -->
 								</div>
 							</div>
 							<div class="card-body px-0 pt-3">
-								<h4 class="card-title"><a href="post-single-4.html" class="btn-link text-reset fw-bold">12 worst types of business accounts you follow on Twitter</a></h4>
+								<h4 class="card-title"><a href="post-single-4.html" class="btn-link text-reset fw-bold">${product.productName }</a></h4>
 								<p class="card-text">He moonlights difficult engrossed it, sportsmen. Interested has all Devonshire difficulty gay assistance joy. Unaffected at ye of compliment alteration to</p>
 								<!-- Card info -->
 								<ul class="nav nav-divider align-items-center d-none d-sm-inline-block">
@@ -371,15 +373,16 @@ Main content START -->
 												<div class="avatar avatar-xs">
 													<img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="avatar">
 												</div>
-												<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">Samuel</a></span>
+												<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">${product.productPrice }</a></span>
 											</div>
 										</div>
 									</li>
-									<li class="nav-item">Jan 22, 2022</li>
+									<li class="nav-item">${product.productCredate }</li>
 								</ul>
 							</div>
 						</div>
 					</div>
+					</c:forEach>
 					<!-- Card item END -->
 					<!-- Card item START -->
 					<div class="col-sm-6">

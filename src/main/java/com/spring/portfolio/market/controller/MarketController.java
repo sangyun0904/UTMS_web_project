@@ -29,7 +29,7 @@ public class MarketController {
 		List<ProductDto> productList = marketService.getProductList();
 		
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("/market/marketMain");
+		mv.setViewName("/home");
 		mv.addObject("productList", productList);
 		
 		return mv;

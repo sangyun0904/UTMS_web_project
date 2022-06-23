@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.portfolio.member.dto.MemberDto;
@@ -31,9 +32,9 @@ public class MemberController {
 	}
 	
 	@RequestMapping(value="/login" , method=RequestMethod.POST)
-	public ModelAndView login(@RequestParam Map<String, String> loginMap, HttpServletRequest request) throws Exception {
+	public @ResponseBody String login(@RequestParam Map<String, String> loginMap, HttpServletRequest request) throws Exception {
 		
-		ModelAndView mv = new ModelAndView();
+		String htmlBody = "";
 		
 		MemberDto memberDto = memberService.login(loginMap);
 		
@@ -41,10 +42,18 @@ public class MemberController {
 			HttpSession session = request.getSession();
 			session.setAttribute("isLogOn", true);
 			session.setAttribute("memberInfo", memberDto.getMemberId());
-			mv.setViewName("/");
+			htmlBody += "<script>";
+			htmlBody += "alert('Welcome " + memberDto.getMemberId() + "!');";
+			htmlBody += "location.href='/portfolio/productList'";
+			htmlBody += "</script>";
+		} 
+		else {
+			htmlBody += "<script>";
+			htmlBody += "alert('check your Id or Password!');";
+			htmlBody += "history.back(-1);";
+			htmlBody += "</script>";
 		}
-		
-		return mv;
+		return htmlBody;
 		
 	}
 	

@@ -39,7 +39,7 @@
 		FROM
 				T_MEMBER
 		WHERE
-				MEMBER_ID = #{id}
+				MEMBER_ID = #{memberId} AND MEMBER_PW = #{memberPw}
 	</select>
 
 </mapper>

@@ -330,16 +330,16 @@
 	        <div class="p-4 p-sm-5 bg-primary-soft rounded">
 						<h2>Log in to your account</h2>
 						<!-- Form START -->
-						<form class="mt-4">
+						<form class="mt-4" action="/portfolio/login" method="post">
 							<!-- Email -->
 							<div class="mb-3">
 								<label class="form-label" for="exampleInputEmail1">ID</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="id">
+								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="id" name="memberId">
 							</div>
 							<!-- Password -->
 							<div class="mb-3">
 								<label class="form-label" for="exampleInputPassword1">Password</label>
-								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********">
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********" name="memberPw">
 							</div>
 							<!-- Checkbox -->
 							<div class="mb-3 form-check">
