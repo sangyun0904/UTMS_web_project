@@ -32,5 +32,14 @@
                 NOW()
         )
 	</insert>
+	
+	<select id="login" resultType="MemberDto" parameterType="hashmap">
+		SELECT
+				*
+		FROM
+				T_MEMBER
+		WHERE
+				MEMBER_ID = #{id}
+	</select>
 
 </mapper>

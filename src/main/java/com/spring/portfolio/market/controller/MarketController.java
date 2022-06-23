@@ -3,6 +3,7 @@ package com.spring.portfolio.market.controller;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -42,6 +43,8 @@ public class MarketController {
 	@RequestMapping(value="/uploadProduct" , method=RequestMethod.POST)
 	public ResponseEntity<String> uploadProduct(ProductDto productDto, HttpServletRequest request) throws Exception {
 		
+		HttpSession session = request.getSession();
+		productDto.setProductSeller((String)session.getAttribute("memberInfo"));
 		marketService.addProduct(productDto);
 		
 		String message  = "<script>";
