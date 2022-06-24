@@ -392,7 +392,7 @@ Main content START -->
 						<div class="card">
 							<!-- Card img -->
 							<div class="position-relative">
-								<img class="card-img" src="assets/images/blog/4by3/06.jpg" alt="Card image">
+								<img class="card-img" src="resources/images/blog/4by3/06.jpg" alt="Card image">
 								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
 									<!-- Card overlay Top -->
 									<div class="w-100 mb-auto d-flex justify-content-end">
@@ -417,7 +417,7 @@ Main content START -->
 										<div class="nav-link">
 											<div class="d-flex align-items-center position-relative">
 												<div class="avatar avatar-xs">
-													<img class="avatar-img rounded-circle" src="assets/images/avatar/02.jpg" alt="avatar">
+													<img class="avatar-img rounded-circle" src="resources/images/avatar/02.jpg" alt="avatar">
 												</div>
 												<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">Dennis</a></span>
 											</div>
@@ -434,7 +434,7 @@ Main content START -->
 						<div class="card">
 							<!-- Card img -->
 							<div class="position-relative">
-								<img class="card-img" src="assets/images/blog/4by3/03.jpg" alt="Card image">
+								<img class="card-img" src="resources/images/blog/4by3/03.jpg" alt="Card image">
 								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
 									<!-- Card overlay bottom -->
 									<div class="w-100 mt-auto">
@@ -452,7 +452,7 @@ Main content START -->
 										<div class="nav-link">
 											<div class="d-flex align-items-center position-relative">
 												<div class="avatar avatar-xs">
-													<img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="avatar">
+													<img class="avatar-img rounded-circle" src="resources/images/avatar/03.jpg" alt="avatar">
 												</div>
 												<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">Bryan</a></span>
 											</div>
@@ -469,7 +469,7 @@ Main content START -->
 						<div class="card">
 							<!-- Card img -->
 							<div class="position-relative">
-								<img class="card-img" src="assets/images/blog/4by3/04.jpg" alt="Card image">
+								<img class="card-img" src="resources/images/blog/4by3/04.jpg" alt="Card image">
 								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
 									<!-- Card overlay bottom -->
 									<div class="w-100 mt-auto">
@@ -487,7 +487,7 @@ Main content START -->
 										<div class="nav-link">
 											<div class="d-flex align-items-center position-relative">
 												<div class="avatar avatar-xs">
-													<img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="avatar">
+													<img class="avatar-img rounded-circle" src="resources/images/avatar/04.jpg" alt="avatar">
 												</div>
 												<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">Billy</a></span>
 											</div>
@@ -504,7 +504,7 @@ Main content START -->
 						<div class="card">
 							<!-- Card img -->
 							<div class="position-relative">
-								<img class="card-img" src="assets/images/blog/4by3/05.jpg" alt="Card image">
+								<img class="card-img" src="resources/images/blog/4by3/05.jpg" alt="Card image">
 								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
 									<!-- Card overlay Top -->
 									<div class="w-100 mb-auto d-flex justify-content-end">
@@ -529,7 +529,7 @@ Main content START -->
 										<div class="nav-link">
 											<div class="d-flex align-items-center position-relative">
 												<div class="avatar avatar-xs">
-													<img class="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="avatar">
+													<img class="avatar-img rounded-circle" src="resources/images/avatar/05.jpg" alt="avatar">
 												</div>
 												<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">Jacqueline</a></span>
 											</div>
@@ -546,7 +546,7 @@ Main content START -->
 						<div class="card">
 							<!-- Card img -->
 							<div class="position-relative">
-								<img class="card-img" src="assets/images/blog/4by3/12.jpg" alt="Card image">
+								<img class="card-img" src="resources/images/blog/4by3/12.jpg" alt="Card image">
 								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
 									<!-- Card overlay bottom -->
 									<div class="w-100 mt-auto">
@@ -564,7 +564,7 @@ Main content START -->
 										<div class="nav-link">
 											<div class="d-flex align-items-center position-relative">
 												<div class="avatar avatar-xs">
-													<img class="avatar-img rounded-circle" src="assets/images/avatar/06.jpg" alt="avatar">
+													<img class="avatar-img rounded-circle" src="resources/images/avatar/06.jpg" alt="avatar">
 												</div>
 												<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">Carolyn</a></span>
 											</div>
@@ -713,8 +713,8 @@ Footer START -->
 		<div class="row pt-5">
 			<!-- Footer Widget -->
 			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="light-mode-item" src="assets/images/logo.svg" alt="logo">			
-				<img class="dark-mode-item" src="assets/images/logo-light.svg" alt="logo">
+				<img class="light-mode-item" src="resources/images/logo.svg" alt="logo">			
+				<img class="dark-mode-item" src="resources/images/logo-light.svg" alt="logo">
 				<p class="mt-3">The next-generation blog, news, and magazine theme for you to start sharing your stories today! This Bootstrap 5 based theme is ideal for all types of sites that deliver the news.</p>
 				<div class="mt-4">©2022 <a href="https://www.webestica.com/" class="text-reset btn-link" target="_blank">Webestica</a>. All rights reserved
 				</div>

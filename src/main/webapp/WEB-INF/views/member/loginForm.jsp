@@ -352,7 +352,7 @@
 									<button type="submit" class="btn btn-success">Sign me in</button>
 								</div>
 								<div class="col-sm-8 text-sm-end">
-									<span>Don't have an account? <a href="signup.html"><u>Sign up</u></a></span>
+									<span>Don't have an account? <a href="/portfolio/memberForm"><u>Sign up</u></a></span>
 								</div>
 							</div>
 						</form>
