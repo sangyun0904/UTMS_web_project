@@ -25,4 +25,9 @@ public class MarketDaoImpl implements MarketDao{
 		return productList;
 	}
 
+	@Override
+	public ProductDto selectOneProduct(int productId) throws Exception{
+		return sqlSession.selectOne("mapper.market.getOneProduct", productId);
+	}
+
 }
