@@ -36,9 +36,9 @@ public class MarketController {
 	}
 	
 	@RequestMapping(value="/productInfo" , method=RequestMethod.GET)
-	public ModelAndView productInfo(int productId) throws Exception {
+	public ModelAndView productInfo(int num) throws Exception {
 		
-		ProductDto productDto = marketService.getOneProduct(productId);
+		ProductDto productDto = marketService.getOneProduct(num);
 		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/market/productInfo");

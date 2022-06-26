@@ -365,7 +365,7 @@ Main content START -->
 								</div>
 							</div>
 							<div class="card-body px-0 pt-3">
-								<h4 class="card-title"><a href="post-single-4.html" class="btn-link text-reset fw-bold">${product.productName }</a></h4>
+								<h4 class="card-title"><a href="/portfolio/productInfo?num=${product.productId }"  class="btn-link text-reset fw-bold">${product.productName }</a></h4>
 								<p class="card-text">${product.productDesc }</p>
 								<!-- Card info -->
 								<ul class="nav nav-divider align-items-center d-none d-sm-inline-block">

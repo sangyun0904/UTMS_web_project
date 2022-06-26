@@ -30,13 +30,22 @@
 				T_PRODUCT;
 	</select>
 	
+	<select id="getOneProduct" parameterType="int" resultType="ProductDto">
+		SELECT
+				*
+		FROM
+				T_PRODUCT
+		WHERE
+				PRODUCT_ID = #{num};
+	</select>
+	
 	<select id="getSortProducts" resultType="ProductDto">
 		SELECT
 				*
 		FROM
 				T_PRODUCT
 		WHERE
-				PRODUCT_SORT = #{categoty}
+				PRODUCT_SORT = #{category};
 	</select>
 	
 </mapper>

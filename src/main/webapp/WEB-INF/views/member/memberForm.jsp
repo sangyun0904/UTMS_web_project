@@ -374,23 +374,23 @@ Inner intro START -->
         <div class="bg-primary-soft rounded p-4 p-sm-5">
 					<h2>Create your free account </h2>
 					<!-- Form START -->
-					<form class="mt-4">
+					<form class="mt-4" action="portfolio/login" method="post">
 						<!-- Email -->
 						<div class="mb-3">
 							<label class="form-label" for="exampleInputEmail1">Email address</label>
 							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail"><br>
-			                    <input class="custom-control-input" id="emailstsYn" type="checkbox" name="emailstsYn"  value="Y" checked/>
+			                    <input class="custom-control-input" id="emailstsYn" type="checkbox" name="memberId"  value="Y" checked/>
 			                    <label for="emailstsYn">BMS에서 발송하는 E-mail을 수신합니다.</label>
 						</div>
 						<!-- User name -->
 						<div class="mb-3">
 							<label class="form-label" for="exampleInputPassword2">이름</label>
-							<input type="password" class="form-control"  id="memberName" name="memberName"  maxlength="15" placeholder="이름을 입력하세요." >
+							<input type="text" class="form-control"  id="memberName" name="memberName"  maxlength="15" placeholder="이름을 입력하세요." >
 						</div>							
 						<!-- Password -->
 						<div class="mb-3">
 							<label class="form-label" for="exampleInputPassword1">비밀번호</label>
-							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********">
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********" name="memberPw">
 						</div>
 						<!-- Password -->
 						<div class="mb-3">

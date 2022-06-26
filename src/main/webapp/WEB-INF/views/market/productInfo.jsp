@@ -352,7 +352,7 @@ Inner intro START -->
 			<div class="col-md-6 mt-4 mt-md-0">
         <a href="#" class="badge bg-primary-soft text-primary mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Review</a>
 				<span class="ms-2 small">Updated: 15 April 2022 07:30 IST</span>
-				<h1 class="display-6">The pros and cons of creative startups</h1>
+				<h1 class="display-6">${productDto.productName }</h1>
 				<p class="lead">Ask a quick six seven offer see among. Handsome met debating sir dwelling age material. As style lived he worse dried. Offered related so visitors we private removed. Moderate do subjects to distance. Picture for attempt joy excited ten carried manners talking how. Suspicion neglected he resolving agreement perceived at an. </p>
 			</div>			 
 		</div>
