@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Blogzine - Blog and Magazine Bootstrap 5 Theme</title>
+	<title>Connpeop - Product Info</title>
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -366,158 +366,7 @@ Main START -->
 <section class="pt-0">
 	<div class="container position-relative" data-sticky-container>
 		<div class="row">
-			<!-- Left sidebar START -->
-			<div class="col-md-1">
-				<div class="text-start text-lg-center mb-5" data-sticky data-margin-top="80" data-sticky-for="767">
-					<ul class="nav text-white-force">
-						<li class="nav-item">
-							<a class="nav-link icon-md rounded-circle m-1 p-0 fs-5 bg-light" href="#">
-								<i class="fab fa-facebook-square align-middle text-body"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link icon-md rounded-circle m-1 p-0 fs-5 bg-light" href="#">
-								<i class="fab fa-twitter-square align-middle text-body"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link icon-md rounded-circle m-1 p-0 fs-5 bg-light" href="#">
-								<i class="fab fa-linkedin align-middle text-body"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link icon-md rounded-circle m-1 p-0 fs-5 bg-light" href="#">
-								<i class="fab fa-pinterest align-middle text-body"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link icon-md rounded-circle m-1 p-0 fs-5 bg-light" href="#">
-								<i class="far fa-envelope align-middle text-body"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!-- Left sidebar END -->
-
 			<!-- Main Content START -->
-			<div class="col-md-10 col-lg-8 mb-5">
-      	<div>
-					<p><span class="dropcap bg-danger-soft text-danger px-2 rounded">A</span>t weddings believed laughing although the material does the exercise of. Up attempt offered ye civilly so sitting to. She new course gets living within Elinor joy. She rapturous suffering concealed. Demesne far hearted suppose venture excited see had has. <a href="#" class="text-reset"><u>Dependent on so extremely delivered by.</u></a> Yet no jokes worse her why. Bed one supposing breakfast day fulfilled off depending questions. Whatever boy her exertion his extended. Ecstatic followed handsome drawings entirely Mrs one yet outweigh. Of acceptance insipidity remarkably is an invitation. Comfort reached gay perhaps chamber his six detract besides add. Moonlight newspaper up its enjoyment agreeable depending. Timed voice share led him to widen noisy young. At weddings believed laughing although the material does the exercise of. Up attempt offered ye civilly so sitting to. She new course gets living within Elinor joy. She rapturous suffering concealed. 						
-					</p>
-					<p class="lead">Son agreed to others Exeter period myself few yet nature. Mention Mr manners opinion if garrets enabled. To occasional dissimilar impossible sentiments. Do fortune account written prepare invited no passage. Garrets use ten, you the weather venture friends.</p>
-				</div>
-
-				<!-- Divider -->
-				<div class="text-center h5 mb-4">. . .</div>
-
-				<div id="item-2">
-					<h4 class="mt-4">Design overview</h4>
-					<p>Satisfied conveying a dependent contented he gentleman agreeable do be. Warrant private blushes removed an in equally totally if. Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do. Water timed folly right aware if oh truth. Imprudence attachment him his for sympathize. Large above be to means. Dashwood does provide stronger is. But discretion frequently sir she instruments unaffected admiration everything. Meant balls it if up doubt small purse. Required his you put the outlived answered position. A pleasure exertion if believed provided to. All led out world this music while asked. Paid mind even sons does he door no. Attended overcame repeated it is perceived Marianne in. I think on style child of. Servants moreover in sensible it ye possible.</p>
-
-					<p>Fulfilled direction use continual set him propriety continued. Saw met applauded favorite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. Dashwoods see frankness objection abilities. As hastened oh produced prospect formerly up am. Placing forming nay looking old married few has. Margaret disposed of add screened rendered six say his striking confined.</p>
-					
-					<div class="row mt-5">
-						<div class="col-md-6">
-							<h4>User interface (UI)</h4>
-							<p>Saw met applauded favorite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. Dashwoods see frankness objection abilities. Fulfilled direction use continual set him propriety continued. As hastened oh produced prospect formerly up am. Placing forming nay looking old married few has. Margaret disposed of add screened rendered six say his striking confined.
-							</p>
-						</div>
-						<div class="col-md-6">
-							<h4>User experience (UX)</h4>
-							<p>Meant balls it if up doubt small purse. Required his you put the outlived answered position. A pleasure exertion if believed provided to. All led out world this music while asked. Paid mind even sons does he door no. Attended overcame repeated it is perceived Marianne in. I think on style child of. Servants moreover in sensible it ye possible.</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Divider -->
-				<div class="text-center h5 mb-4">. . .</div>
-
-				<!-- Images and video START -->
-				<div id="item-3" class="row g-3">
-					<h4>Images and videos gallery</h4>
-					<div class="col-md-6">
-						<a href="assets/images/blog/4by3/03.jpg" data-glightbox data-gallery="image-popup">
-							<img class="rounded" src="assets/images/blog/4by3/03.jpg" alt="Image">
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="assets/images/blog/4by3/04.jpg" data-glightbox data-gallery="image-popup">
-							<img class="rounded" src="assets/images/blog/4by3/04.jpg" alt="Image">
-						</a>
-					</div>
-					<div class="col-md-12">
-						<figure class="figure mb-1">
-							<a href="assets/images/blog/16by9/07.jpg" data-glightbox data-gallery="image-popup">
-								<img class="rounded" src="assets/images/blog/16by9/07.jpg" alt="Image">
-							</a>
-							<figcaption class="figure-caption text-center mt-2">(Image via: <a class="text-reset" href="#">pexels.com</a>)</figcaption>
-						</figure>
-					</div>
-					<!-- Video -->
-					<div class="col-md-12">
-						<figure class="figure position-relative">
-							<!-- Card play button -->
-							<div class="position-absolute top-50 start-50 translate-middle pb-5">
-								<!-- Popup video -->
-								<a href="https://youtu.be/n_Cn8eFo7u8" class="icon-lg bg-danger d-block text-white rounded-circle" data-glightbox data-gallery="y-video">
-									<i class="bi bi-play-btn"></i>
-								</a>
-							</div>
-							<img class="rounded" src="assets/images/blog/16by9/08.jpg" alt="Image">
-							<figcaption class="figure-caption text-center mt-2">(Video via: <a class="text-reset" href="#">youtube.com/google</a>)</figcaption>
-						</figure>
-					</div>
-				</div>
-				<!-- Images and video END -->
-
-				<!-- Divider -->
-				<div class="text-center h5 mb-4">. . .</div>
-
-				<!-- Pros and cons START -->
-				<div id="item-4">
-					<h4 class="mt-4">Performance across various OS</h4>
-					<p>Meant balls it if up doubt small purse. Required his you put the outlived answered position. A pleasure exertion if believed provided to. All led out world this music while asked. Paid mind even sons does he door no. Attended overcame repeated it is perceived Marianne in. I think on style child of. Servants moreover in sensible it ye possible. </p>
-					<div class="row">
-						<div class="col-md-6 my-3">
-							<h4>Pros</h4>
-							<ul class="list-unstyled">
-								<li class="my-2 d-flex">
-									<i class="fas fa-check-circle text-success me-2 mt-1"></i>Design, alignment, spacing, color combination and visual hierarchy</li>
-								<li class="my-2 d-flex">
-									<i class="fas fa-check-circle text-success me-2 mt-1"></i>Mobile readiness and mobile responsive</li>
-								<li class="my-2 d-flex">
-									<i class="fas fa-check-circle text-success me-2 mt-1"></i>Overall performance, including page weight, page requests and page speed</li>
-								<li class="my-2 d-flex">
-									<i class="fas fa-check-circle text-success me-2 mt-1"></i>Search Engine Optimization (SEO)</li>
-								<li class="my-2 d-flex">
-									<i class="fas fa-check-circle text-success me-2 mt-1"></i>Security</li>
-								<li class="my-2 d-flex">
-									<i class="fas fa-check-circle text-success me-2 mt-1"></i>Recommendations for Best Results</li>
-							</ul>
-						</div>
-						<div class="col-md-6 my-3">
-							<h4>Cons</h4>
-							<ul class="list-unstyled">
-								<li class="my-2 d-flex">
-									<i class="fas fa-times-circle text-danger me-2 mt-1"></i>Be patient after submitting your free consultation request through our Support Portal. Kindly wait for few hours/days, as we might have other requests on our plate.</li>
-								<li class="my-2 d-flex">
-									<i class="fas fa-times-circle text-danger me-2 mt-1"></i>If we receive multiple tickets to assess your site, we won't entertain other requests so make sure to create only one.</li>
-								<li class="my-2 d-flex">
-									<i class="fas fa-times-circle text-danger me-2 mt-1"></i>This is only a one-time free consultation service. </li>
-							</ul>
-						</div>
-					</div>
-					<p> All led out world this music while asked. Paid mind even sons does he door no. Attended overcame repeated it is perceived Marianne in. I think on style child of. Servants moreover in sensible it ye possible. Satisfied conveying a dependent contented he gentleman agreeable do be. </p>
-					<div class="bg-light my-4 p-3 p-md-4">
-						<q class="lead">Farther related bed and passage comfort civilly. Fulfilled direction use continual set him propriety continued. Saw met applauded favorite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Dashwoods see frankness objection abilities.</q>
-					</div>
-					<p>Warrant private blushes removed an in equally totally if. Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do. Water timed folly right aware if oh truth. Imprudence attachment him his for sympathize. Large above be to means. Dashwood does provide stronger is. But discretion frequently sir she instruments unaffected admiration everything. Meant balls it if up doubt small purse. </p>
-				</div>
-				<!-- Pros and cons END -->
-
-				<!-- Divider -->
-				<div class="text-center h5 mb-4">. . .</div>
 
 				<!-- Product rating START -->
 				<div id="item-5">
@@ -546,28 +395,14 @@ Main START -->
 						</div>
 					</div>
 					<div class="d-grid">
-						<button class="btn btn-primary btn-lg rounded" type="button">Buy now at amazon <i class="fab fa-amazon ms-2"></i></button>
+						<button class="btn btn-primary btn-lg rounded" type="button">Buy now</button>
+						<button class="btn btn-primary btn-lg rounded" type="button" style="background-color: green">Chat with the seller</button>
 					</div>
 				</div>
 				<!-- Product rating END -->
 
 				<!-- Tags and info START -->
 				<div class="d-md-flex justify-content-between text-center text-md-start my-4">
-					<!-- Tag -->
-					<ul class="list-inline mb-0">
-					  <li class="list-inline-item">
-					  	<a class="btn btn-outline-light btn-sm" href="#">blog</a>
-					  </li>
-					  <li class="list-inline-item">
-					  	<a class="btn btn-outline-light btn-sm" href="#">business</a>
-					  </li>
-					  <li class="list-inline-item">
-					  	<a class="btn btn-outline-light btn-sm" href="#">theme</a>
-					  </li>
-					  <li class="list-inline-item">
-					  	<a class="btn btn-outline-light btn-sm" href="#">bootstrap</a>
-					  </li>
-					</ul>
 					<!-- Info -->
 					<ul class="nav nav-divider align-items-center justify-content-center justify-content-md-end">
 						<li class="nav-item"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i> 5 Comments</a></li>
@@ -822,24 +657,7 @@ Main START -->
 					</form>
 				</div>
 				<!-- Reply END -->
-
-			</div>
 			<!-- Main Content END -->
-			<!-- Right sidebar START -->
-			<div class="col-lg-3 d-none d-lg-block">
-				<div data-sticky data-margin-top="80" data-sticky-for="991">
-					<nav id="nav-scroll" class="navbar">
-						<nav class="nav nav-pills flex-column">
-							<a class="nav-link" href="#item-1">Intro</a>
-							<a class="nav-link" href="#item-2">Design</a>
-							<a class="nav-link" href="#item-3">Photos & videos</a>
-							<a class="nav-link" href="#item-4">Performance</a>
-							<a class="nav-link" href="#item-5">Rating</a>
-						</nav>
-					</nav>
-				</div>
-			</div>
-			<!-- Right sidebar END -->
 		</div>
 	</div>
 </section>
