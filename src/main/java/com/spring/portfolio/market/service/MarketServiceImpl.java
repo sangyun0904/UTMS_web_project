@@ -26,6 +26,7 @@ public class MarketServiceImpl implements MarketService{
 
 	@Override
 	public ProductDto getOneProduct(int num) throws Exception{
+		marketDao.updateViews(num);
 		return marketDao.selectOneProduct(num);
 	}
 

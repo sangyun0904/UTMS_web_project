@@ -11,7 +11,10 @@
 					PRODUCT_PRICE,
 					PRODUCT_SORT,
 					PRODUCT_DESC,
-					PRODUCT_CREDATE
+					PRODUCT_CREDATE,
+					PRODUCT_COMMENTS,
+					PRODUCT_VIEWS,
+					PRODUCT_LIKES
 				)
 		VALUES (
 				#{productName},
@@ -19,7 +22,10 @@
 				#{productPrice},
 				#{productSort},
 				#{productDesc},
-				NOW()
+				NOW(),
+				0,
+				0,
+				0
 		);
 	</insert>
 	
@@ -47,5 +53,14 @@
 		WHERE
 				PRODUCT_SORT = #{category};
 	</select>
+	
+	<update id="increaseViews" parameterType="int">
+		UPDATE
+				T_PRODUCT
+		SET
+				PRODUCT_VIEWS = PRODUCT_VIEWS + 1 
+		WHERE
+				PRODUCT_ID = #{num};
+	</update>
 	
 </mapper>

@@ -30,4 +30,9 @@ public class MarketDaoImpl implements MarketDao{
 		return sqlSession.selectOne("mapper.market.getOneProduct", num);
 	}
 
+	@Override
+	public void updateViews(int num) throws Exception {
+		sqlSession.update("mapper.market.increaseViews", num);
+	}
+
 }

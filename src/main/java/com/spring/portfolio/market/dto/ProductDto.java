@@ -14,6 +14,9 @@ public class ProductDto {
 	private String productDesc;
 	private String productImages;
 	private Date   productCredate;
+	private int	   productComments;
+	private int    productViews;
+	private int    productLikes;
 	
 	public int getProductId() {
 		return productId;
@@ -64,11 +67,32 @@ public class ProductDto {
 		this.productCredate = productCredate;
 	}
 	
+	public int getProductComments() {
+		return productComments;
+	}
+	public void setProductComments(int productComments) {
+		this.productComments = productComments;
+	}
+	public int getProductViews() {
+		return productViews;
+	}
+	public void setProductViews(int productViews) {
+		this.productViews = productViews;
+	}
+	public int getProductLikes() {
+		return productLikes;
+	}
+	public void setProductLikes(int productLikes) {
+		this.productLikes = productLikes;
+	}
+	
 	@Override
 	public String toString() {
 		return "ProductDto [productId=" + productId + ", productName=" + productName + ", productSeller="
 				+ productSeller + ", productPrice=" + productPrice + ", productSort=" + productSort + ", productDesc="
-				+ productDesc + ", productImages=" + productImages + ", productCredate=" + productCredate + "]";
+				+ productDesc + ", productImages=" + productImages + ", productCredate=" + productCredate
+				+ ", productComments=" + productComments + ", productViews=" + productViews + ", productLikes="
+				+ productLikes + "]";
 	}
-
+	
 }
