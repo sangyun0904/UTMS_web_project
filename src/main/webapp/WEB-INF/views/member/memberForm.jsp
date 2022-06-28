@@ -80,8 +80,8 @@ Header START -->
 		<div class="container">
 			<!-- Logo START -->
 			<a class="navbar-brand" href="index.html">
-				<img class="navbar-brand-item light-mode-item" src="assets/images/logo.svg" alt="logo">			
-				<img class="navbar-brand-item dark-mode-item" src="assets/images/logo-light.svg" alt="logo">			
+				<img class="navbar-brand-item light-mode-item" src="resources/images/logo.svg" alt="logo">			
+				<img class="navbar-brand-item dark-mode-item" src="resources/images/logo-light.svg" alt="logo">			
 			</a>
 			<!-- Logo END -->
 
@@ -227,7 +227,7 @@ Header START -->
 									<div class="col-sm-6 col-lg-3">
 										<div class="card bg-transparent">
 											<!-- Card img -->
-											<img class="card-img rounded" src="assets/images/blog/16by9/small/01.jpg" alt="Card image">
+											<img class="card-img rounded" src="resources/images/blog/16by9/small/01.jpg" alt="Card image">
 											<div class="card-body px-0 pt-3">
 												<h6 class="card-title mb-0"><a href="post-single-2.html" class="btn-link text-reset fw-bold">7 common mistakes everyone makes while traveling</a></h6>
 												<!-- Card info -->
@@ -245,7 +245,7 @@ Header START -->
 									<div class="col-sm-6 col-lg-3">
 										<div class="card bg-transparent">
 											<!-- Card img -->
-											<img class="card-img rounded" src="assets/images/blog/16by9/small/02.jpg" alt="Card image">
+											<img class="card-img rounded" src="resources/images/blog/16by9/small/02.jpg" alt="Card image">
 											<div class="card-body px-0 pt-3">
 												<h6 class="card-title mb-0"><a href="post-single-2.html" class="btn-link text-reset fw-bold">12 worst types of business accounts you follow on Twitter</a></h6>
 												<!-- Card info -->
@@ -263,7 +263,7 @@ Header START -->
 									<div class="col-sm-6 col-lg-3">
 										<div class="card bg-transparent">
 											<!-- Card img -->
-											<img class="card-img rounded" src="assets/images/blog/16by9/small/03.jpg" alt="Card image">
+											<img class="card-img rounded" src="resources/images/blog/16by9/small/03.jpg" alt="Card image">
 											<div class="card-body px-0 pt-3">
 												<h6 class="card-title mb-0"><a href="post-single-2.html" class="btn-link text-reset fw-bold">Skills that you can learn from business</a></h6>
 												<!-- Card info -->
@@ -374,12 +374,12 @@ Inner intro START -->
         <div class="bg-primary-soft rounded p-4 p-sm-5">
 					<h2>Create your free account </h2>
 					<!-- Form START -->
-					<form class="mt-4" action="portfolio/login" method="post">
+					<form class="mt-4" action="/portfolio/memberForm" method="post">
 						<!-- Email -->
 						<div class="mb-3">
 							<label class="form-label" for="exampleInputEmail1">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail"><br>
-			                    <input class="custom-control-input" id="emailstsYn" type="checkbox" name="memberId"  value="Y" checked/>
+							<input type="email" class="form-control" id="exampleInputEmail1" name="memberId"  aria-describedby="emailHelp" placeholder="E-mail"><br>
+			                    <input class="custom-control-input" id="emailstsYn" type="checkbox" name="emailstsYn"  value="Y" checked/>
 			                    <label for="emailstsYn">BMS에서 발송하는 E-mail을 수신합니다.</label>
 						</div>
 						<!-- User name -->
@@ -509,8 +509,8 @@ Footer START -->
 		<div class="row pt-5">
 			<!-- Footer Widget -->
 			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="light-mode-item" src="assets/images/logo.svg" alt="logo">			
-				<img class="dark-mode-item" src="assets/images/logo-light.svg" alt="logo">
+				<img class="light-mode-item" src="resources/images/logo.svg" alt="logo">			
+				<img class="dark-mode-item" src="resources/images/logo-light.svg" alt="logo">
 				<p class="mt-3">The next-generation blog, news, and magazine theme for you to start sharing your stories today! This Bootstrap 5 based theme is ideal for all types of sites that deliver the news.</p>
 				<div class="mt-4">©2022 <a href="https://www.webestica.com/" class="text-reset btn-link" target="_blank">Webestica</a>. All rights reserved
 				</div>
@@ -582,10 +582,10 @@ Footer END -->
 JS libraries, plugins and custom scripts -->
 
 <!-- Bootstrap JS -->
-<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="resources/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Template Functions -->
-<script src="assets/js/functions.js"></script>
+<script src="resources/js/functions.js"></script>
 
 </body>
 </html>

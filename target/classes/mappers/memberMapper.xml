@@ -4,31 +4,34 @@
 <mapper namespace="mapper.member">
 
 	<insert id="insertNewMember" parameterType="memberDto">
-		INSERT INTO 
-    			T_MEMBER 
+		INSERT INTO T_MEMBER (
+    			MEMBER_ID,
+    			MEMBER_PW,
+    			MEMBER_NAME,
+    			MEMBER_BIRTH_Y,
+    			MEMBER_BIRTH_M,
+    			MEMBER_BIRTH_D,
+    			MEMBER_BIRTH_GN,
+    			HP1,
+    			HP2,
+    			HP3,
+    			SMSSTS_YN,
+    			EMAILSTS_YN,
+    			JOIN_DATE
+    			)
     	VALUES (
 				#{memberId},
 				#{memberPw},
 				#{memberName},
-             	#{memberGender},
                	#{memberBirthY},
                	#{memberBirthM},
                 #{memberBirthD},
                 #{memberBirthGn},
-                #{tel1},
-                #{tel2},
-                #{tel3},
                 #{hp1},
                 #{hp2},
                 #{hp3},
                 #{smsstsYn},
-                #{email1},
-                #{email2},
                 #{emailstsYn},
-                #{zipcode},
-                #{roadAddress},
-                #{jibunAddress},
-                #{namujiAddress},
                 NOW()
         )
 	</insert>

@@ -49,7 +49,7 @@ public class MarketController {
 	
 	@RequestMapping(value="/uploadProduct", method=RequestMethod.GET)
 	public ModelAndView uploadForm() throws Exception {
-		return new ModelAndView("/market/uploadProduct");
+		return new ModelAndView("/market/newProduct");
 	}
 	
 	@RequestMapping(value="/uploadProduct" , method=RequestMethod.POST)

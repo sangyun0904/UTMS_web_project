@@ -42,8 +42,9 @@ public class MemberController {
 			HttpSession session = request.getSession();
 			session.setAttribute("isLogOn", true);
 			session.setAttribute("memberInfo", memberDto.getMemberId());
+			session.setAttribute("memberName", memberDto.getMemberName());
 			htmlBody += "<script>";
-			htmlBody += "alert('Welcome " + memberDto.getMemberId() + "!');";
+			htmlBody += "alert('Welcome " + memberDto.getMemberName() + "!');";
 			htmlBody += "location.href='/portfolio/productList'";
 			htmlBody += "</script>";
 		} 
@@ -77,7 +78,7 @@ public class MemberController {
 		return new ModelAndView("/member/memberForm");
 	}
 	
-	@RequestMapping(value="/memberForm" , method = RequestMethod.POST)
+	@RequestMapping(value="/memberForm" , method=RequestMethod.POST)
 	public ResponseEntity<String> memberForm(MemberDto memberDto , HttpServletRequest request) throws Exception {
 		
 		if (memberDto.getEmailstsYn() == null)  memberDto.setEmailstsYn("N");
@@ -87,7 +88,7 @@ public class MemberController {
 
 		String message  = "<script>";
 			   message += " alert('회원가입되었습니다.');";
-			   message += " location.href='/portfolio/memberForm';";
+			   message += " location.href='/portfolio/loginForm';";
 			   message += " </script>";
 	    
 	    HttpHeaders responseHeaders = new HttpHeaders();

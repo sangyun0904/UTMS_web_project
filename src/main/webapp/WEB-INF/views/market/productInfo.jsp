@@ -185,7 +185,7 @@ Header START -->
 									<div class="col-sm-6 col-lg-3">
 										<div class="card bg-transparent">
 											<!-- Card img -->
-											<img class="card-img rounded" src="assets/images/blog/16by9/small/01.jpg" alt="Card image">
+											<img class="card-img rounded" src="resources/images/blog/16by9/small/01.jpg" alt="Card image">
 											<div class="card-body px-0 pt-3">
 												<h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">7 common mistakes everyone makes while traveling</a></h6>
 												<!-- Card info -->
@@ -203,7 +203,7 @@ Header START -->
 									<div class="col-sm-6 col-lg-3">
 										<div class="card bg-transparent">
 											<!-- Card img -->
-											<img class="card-img rounded" src="assets/images/blog/16by9/small/02.jpg" alt="Card image">
+											<img class="card-img rounded" src="resources/images/blog/16by9/small/02.jpg" alt="Card image">
 											<div class="card-body px-0 pt-3">
 												<h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">12 worst types of business accounts you follow on Twitter</a></h6>
 												<!-- Card info -->
@@ -221,7 +221,7 @@ Header START -->
 									<div class="col-sm-6 col-lg-3">
 										<div class="card bg-transparent">
 											<!-- Card img -->
-											<img class="card-img rounded" src="assets/images/blog/16by9/small/03.jpg" alt="Card image">
+											<img class="card-img rounded" src="resources/images/blog/16by9/small/03.jpg" alt="Card image">
 											<div class="card-body px-0 pt-3">
 												<h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">Skills that you can learn from business</a></h6>
 												<!-- Card info -->
@@ -342,7 +342,7 @@ Inner intro START -->
 		<div class="row align-items-center">
 			<!-- Image -->
 			<div class="col-md-6 position-relative">
-				<img class="rounded" src="assets/images/blog/4by3/14.jpg" alt="Image">
+				<img class="rounded" src="resources/images/blog/4by3/14.jpg" alt="Image">
 				<!-- Card format icon -->
 				<h5 class="p-3 pe-4 position-absolute top-0 end-0">
 					<span class="badge bg-success text-white fw-bold rounded-pill"> 8.5 rating</span>
@@ -446,7 +446,7 @@ Main START -->
 							<div class="card">
 								<!-- Card img -->
 								<div class="position-relative">
-									<img class="card-img" src="assets/images/blog/4by3/07.jpg" alt="Card image">
+									<img class="card-img" src="resources/images/blog/4by3/07.jpg" alt="Card image">
 									<div class="card-img-overlay d-flex align-items-start flex-column p-3">
 										<!-- Card overlay Top -->
 										<div class="w-100 mb-auto d-flex justify-content-end">
@@ -469,7 +469,7 @@ Main START -->
 											<div class="nav-link">
 												<div class="d-flex align-items-center position-relative">
 													<div class="avatar avatar-xs">
-														<img class="avatar-img rounded-circle" src="assets/images/avatar/07.jpg" alt="avatar">
+														<img class="avatar-img rounded-circle" src="resources/images/avatar/07.jpg" alt="avatar">
 													</div>
 													<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">Lori</a></span>
 												</div>
@@ -484,7 +484,7 @@ Main START -->
 							<div class="card">
 								<!-- Card img -->
 								<div class="position-relative">
-									<img class="card-img" src="assets/images/blog/4by3/08.jpg" alt="Card image">
+									<img class="card-img" src="resources/images/blog/4by3/08.jpg" alt="Card image">
 									<div class="card-img-overlay d-flex align-items-start flex-column p-3">
 										<!-- Card overlay Top -->
 										<div class="w-100 mb-auto d-flex justify-content-end">
@@ -507,7 +507,7 @@ Main START -->
 											<div class="nav-link">
 												<div class="d-flex align-items-center position-relative">
 													<div class="avatar avatar-xs">
-														<img class="avatar-img rounded-circle" src="assets/images/avatar/08.jpg" alt="avatar">
+														<img class="avatar-img rounded-circle" src="resources/images/avatar/08.jpg" alt="avatar">
 													</div>
 													<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">Joan</a></span>
 												</div>
@@ -522,7 +522,7 @@ Main START -->
 							<div class="card">
 								<!-- Card img -->
 								<div class="position-relative">
-									<img class="card-img" src="assets/images/blog/4by3/09.jpg" alt="Card image">
+									<img class="card-img" src="resources/images/blog/4by3/09.jpg" alt="Card image">
 									<div class="card-img-overlay d-flex align-items-start flex-column p-3">
 										<!-- Card overlay Top -->
 										<div class="w-100 mb-auto d-flex justify-content-end">
@@ -545,7 +545,7 @@ Main START -->
 											<div class="nav-link">
 												<div class="d-flex align-items-center position-relative">
 													<div class="avatar avatar-xs">
-														<img class="avatar-img rounded-circle" src="assets/images/avatar/09.jpg" alt="avatar">
+														<img class="avatar-img rounded-circle" src="resources/images/avatar/09.jpg" alt="avatar">
 													</div>
 													<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">Bryan</a></span>
 												</div>
@@ -566,7 +566,7 @@ Main START -->
 					<h3>5 comments</h3>
 					<!-- Comment level 1-->
 					<div class="my-4 d-flex">
-					  <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/images/avatar/01.jpg" alt="avatar">
+					  <img class="avatar avatar-md rounded-circle float-start me-3" src="resources/images/avatar/01.jpg" alt="avatar">
 					  <div>
 					    <div class="mb-2">
 					    	<h5 class="m-0">Allen Smith</h5>
@@ -578,7 +578,7 @@ Main START -->
 					</div>
 						<!-- Comment children level 2 -->
 						<div class="my-4 d-flex ps-2 ps-md-3">
-						  <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/images/avatar/02.jpg" alt="avatar">
+						  <img class="avatar avatar-md rounded-circle float-start me-3" src="resources/images/avatar/02.jpg" alt="avatar">
 						  <div>
 						    <div class="mb-2">
 						    	<h5 class="m-0">Louis Ferguson</h5>
@@ -590,7 +590,7 @@ Main START -->
 						</div>
 							<!-- Comment children level 3 -->
 							<div class="my-4 d-flex ps-3 ps-md-5">
-							  <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/images/avatar/01.jpg" alt="avatar">
+							  <img class="avatar avatar-md rounded-circle float-start me-3" src="resources/images/avatar/01.jpg" alt="avatar">
 							  <div>
 							    <div class="mb-2">
 							    	<h5 class="m-0">Allen Smith</h5>
@@ -602,7 +602,7 @@ Main START -->
 							</div>
 						<!-- Comment level 2 -->
 						<div class="my-4 d-flex ps-2 ps-md-3">
-						  <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/images/avatar/03.jpg" alt="avatar">
+						  <img class="avatar avatar-md rounded-circle float-start me-3" src="resources/images/avatar/03.jpg" alt="avatar">
 						  <div>
 						    <div class="mb-2">
 						    	<h5 class="m-0">Frances Guerrero</h5>
@@ -614,7 +614,7 @@ Main START -->
 						</div>
 					<!-- Comment level 1 -->
 					<div class="my-4 d-flex">
-					  <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/images/avatar/04.jpg" alt="avatar">
+					  <img class="avatar avatar-md rounded-circle float-start me-3" src="resources/images/avatar/04.jpg" alt="avatar">
 					  <div>
 					    <div class="mb-2">
 					    	<h5 class="m-0">Judy Nguyen</h5>
@@ -676,8 +676,8 @@ Footer START -->
 		<div class="row pt-5">
 			<!-- Footer Widget -->
 			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="light-mode-item" src="assets/images/logo.svg" alt="logo">			
-				<img class="dark-mode-item" src="assets/images/logo-light.svg" alt="logo">
+				<img class="light-mode-item" src="resources/images/logo.svg" alt="logo">			
+				<img class="dark-mode-item" src="resources/images/logo-light.svg" alt="logo">
 				<p class="mt-3">The next-generation blog, news, and magazine theme for you to start sharing your stories today! This Bootstrap 5 based theme is ideal for all types of sites that deliver the news.</p>
 				<div class="mt-4">©2022 <a href="https://www.webestica.com/" class="text-reset btn-link" target="_blank">Webestica</a>. All rights reserved
 				</div>
@@ -749,15 +749,15 @@ Footer END -->
 JS libraries, plugins and custom scripts -->
 
 <!-- Bootstrap JS -->
-<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="resources/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Vendors -->
-<script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
-<script src="assets/vendor/sticky-js/sticky.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.js"></script>
+<script src="resources/vendor/tiny-slider/tiny-slider.js"></script>
+<script src="resources/vendor/sticky-js/sticky.min.js"></script>
+<script src="resources/vendor/glightbox/js/glightbox.js"></script>
 
 <!-- Template Functions -->
-<script src="assets/js/functions.js"></script>
+<script src="resources/js/functions.js"></script>
 
 </body>
 </html>

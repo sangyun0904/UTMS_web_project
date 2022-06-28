@@ -1,7 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Blogzine - Blog and Magazine Bootstrap 5 Theme</title>
+	<title>Upload new product</title>
 
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
@@ -10,21 +11,21 @@
 	<meta name="description" content="Bootstrap based News, Magazine and Blog Theme">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="assets/images/favicon.ico">
+	<link rel="shortcut icon" href="resources/images/favicon.ico">
 
 	<!-- Google Font -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
 	<!-- Plugins CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/apexcharts/css/apexcharts.css">
-  <link rel="stylesheet" type="text/css" href="assets/vendor/quill/css/quill.snow.css">
+	<link rel="stylesheet" type="text/css" href="resources/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="resources/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="resources/vendor/apexcharts/css/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="resources/vendor/quill/css/quill.snow.css">
 
 	<!-- Theme CSS -->
-	<link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+	<link id="style-switch" rel="stylesheet" type="text/css" href="resources/css/style.css">
+	
 </head>
 
 <body>
@@ -37,8 +38,8 @@ Header START -->
 		<div class="container">
 			<!-- Logo START -->
 			<a class="navbar-brand me-3" href="index.html">
-				<img class="navbar-brand-item light-mode-item" src="assets/images/logo.svg" alt="logo">			
-				<img class="navbar-brand-item dark-mode-item" src="assets/images/logo-light.svg" alt="logo">			
+				<img class="navbar-brand-item light-mode-item" src="resources/images/logo.svg" alt="logo">			
+				<img class="navbar-brand-item dark-mode-item" src="resources/images/logo-light.svg" alt="logo">			
 			</a>
 			<!-- Logo END -->
 
@@ -125,7 +126,7 @@ Header START -->
 										<a href="#" class="list-group-item-action border-0 border-bottom d-flex p-3">
 											<div class="me-3">
 												<div class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" src="assets/images/avatar/08.jpg" alt="avatar">
+													<img class="avatar-img rounded-circle" src="resources/images/avatar/08.jpg" alt="avatar">
 												</div>
 											</div>
 											<div>
@@ -140,7 +141,7 @@ Header START -->
 										<a href="#" class="list-group-item-action border-0 border-bottom d-flex p-3">
 											<div class="me-3">
 												<div class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" src="assets/images/avatar/02.jpg" alt="avatar">
+													<img class="avatar-img rounded-circle" src="resources/images/avatar/02.jpg" alt="avatar">
 												</div>
 											</div>
 											<div>
@@ -155,7 +156,7 @@ Header START -->
 										<a href="#" class="list-group-item-action border-0 border-bottom d-flex p-3">
 											<div class="me-3">
 												<div class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="avatar">
+													<img class="avatar-img rounded-circle" src="resources/images/avatar/05.jpg" alt="avatar">
 												</div>
 											</div>
 											<div>
@@ -170,7 +171,7 @@ Header START -->
 										<a href="#" class="list-group-item-action border-0 border-bottom d-flex p-3">
 											<div class="me-3">
 												<div class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="avatar">
+													<img class="avatar-img rounded-circle" src="resources/images/avatar/03.jpg" alt="avatar">
 												</div>
 											</div>
 											<div>
@@ -195,7 +196,7 @@ Header START -->
 				<div class="nav-item ms-2 ms-md-3 dropdown">
 					<!-- Avatar -->
 					<a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-						<img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="avatar">
+						<img class="avatar-img rounded-circle" src="resources/images/avatar/03.jpg" alt="avatar">
 					</a>
 
 					<!-- Profile dropdown START -->
@@ -205,7 +206,7 @@ Header START -->
 							<div class="d-flex align-items-center">
 								<!-- Avatar -->
 								<div class="avatar me-3">
-									<img class="avatar-img rounded-circle shadow" src="assets/images/avatar/03.jpg" alt="avatar">
+									<img class="avatar-img rounded-circle shadow" src="resources/images/avatar/03.jpg" alt="avatar">
 								</div>
 								<div>
 									<a class="h6 mt-2 mt-sm-0" href="#"> Louis Ferguson</a>
@@ -245,19 +246,19 @@ Header END -->
 <main>
 
 <!-- =======================
-Post edit START -->
+Main contain START -->
 <section class="py-4">
 	<div class="container">
     <div class="row pb-4">
 			<div class="col-12">
         <!-- Title -->
-        <h1 class="mb-0 h2">Edit post</h1>
+					<h1 class="mb-0 h2">Create a post</h1>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12">
 				<!-- Chart START -->
-				<div class="card border h-100">
+				<div class="card border">
 					<!-- Card body -->
 					<div class="card-body">
             <!-- Form START -->
@@ -267,62 +268,61 @@ Post edit START -->
                 <div class="col-12">
                   <!-- Post name -->
                   <div class="mb-3">
-                    <label class="form-label">Post name</label>
-                    <input required id="con-name" name="name" type="text" class="form-control" value="Ten tell-tale signs you need to get a new startup.">
-                    <small>Moving heaven divide two sea female great midst spirit</small>
+                    <label class="form-label">Product name</label>
+                    <input required id="con-name" name="productName" type="text" class="form-control" placeholder="Product name">
                   </div>
                 </div>
                 <!-- Post type START -->
                 <div class="col-12">
                   <div class="mb-3">
-                    <label class="form-label">Post type</label>
+                    <label class="form-label">Post Category</label>
                     <div class="d-flex flex-wrap gap-3">
                       <!-- Post type item -->
                       <div class="flex-fill">
-                        <input type="radio" class="btn-check" name="poll" id="option" checked>
+                        <input type="radio" class="btn-check" name="productSort" id="option">
                         <label class="btn btn-outline-light w-100" for="option">
                           <i class="bi bi-chat-left-text fs-1"></i>
-                          <span class="d-block"> Post </span>
+                          <span class="d-block"> 가전/가구/인테리 </span>
                         </label>
                       </div>
                       <!-- Post type item -->
                       <div class="flex-fill">
-                        <input type="radio" class="btn-check" name="poll" id="option2">
+                        <input type="radio" class="btn-check" name="productSort" id="option2">
                         <label class="btn btn-outline-light w-100" for="option2">
                             <i class="bi bi-patch-question fs-1"></i>
-                          <span class="d-block"> Question </span>
+                          <span class="d-block"> 스포츠/레저 </span>
                         </label>
                       </div>
                       <!-- Post type item -->
                       <div class="flex-fill">
-                        <input type="radio" class="btn-check" name="poll" id="option3">
+                        <input type="radio" class="btn-check" name="productSort" id="option3" checked>
                         <label class="btn btn-outline-light w-100" for="option3">
                           <i class="bi bi-chat-right-dots fs-1"></i>
-                          <span class="d-block"> Poll </span>
+                          <span class="d-block"> 여성의류/남성패션/잡화 </span>
                         </label>
                       </div>
                       <!-- Post type item -->
                       <div class="flex-fill">
-                        <input type="radio" class="btn-check" name="poll" id="option4">
+                        <input type="radio" class="btn-check" name="productSort" id="option4">
                         <label class="btn btn-outline-light w-100" for="option4">
                           <i class="bi bi-ui-checks-grid fs-1"></i>
-                          <span class="d-block"> Images </span>
+                          <span class="d-block"> 뷰티/미용 </span>
                         </label>
                       </div>
                       <!-- Post type item -->
                       <div class="flex-fill">
-                        <input type="radio" class="btn-check" name="poll" id="option5">
+                        <input type="radio" class="btn-check" name="productSort" id="option5">
                         <label class="btn btn-outline-light w-100" for="option5">
                           <i class="bi bi-camera-reels fs-1"></i>
-                          <span class="d-block"> Video </span>
+                          <span class="d-block"> 도서/티켓/음반 </span>
                         </label>
                       </div>
                       <!-- Post type item -->
                       <div class="flex-fill">
-                        <input type="radio" class="btn-check" name="poll" id="option6">
+                        <input type="radio" class="btn-check" name="productSort" id="option6">
                         <label class="btn btn-outline-light w-100" for="option6">
                           <i class="bi bi-chat-square fs-1"></i>
-                          <span class="d-block"> Other </span>
+                          <span class="d-block"> 유아용품 </span>
                         </label>
                       </div>
                     <!-- Post type item -->
@@ -330,12 +330,12 @@ Post edit START -->
                 </div>
               </div>
               <!-- Post type END -->
-
+              
               <!-- Short description -->
               <div class="col-12">
                 <div class="mb-3">
                     <label class="form-label">Short description </label>
-                    <textarea class="form-control" rows="3">For who thoroughly her boy estimating conviction. Removed demands expense account in outward tedious do.</textarea>
+                    <textarea class="form-control" rows="3" placeholder="Add description"></textarea>
                 </div>
               </div>
 
@@ -378,56 +378,28 @@ Post edit START -->
                       </div>
                       <!-- Main toolbar -->
                       <div class="bg-body border rounded-bottom h-300 overflow-hidden" id="quilleditor">
-                        <h2>Demesne far hearted suppose venture excited see had has.</h2>
-                        <br>
-                        <p>Demesne far hearted suppose venture excited see had has. Dependent on so extremely delivered by. Yet ﻿no jokes worse her why. Bed one supposing breakfast day fulfilled off depending questions. <b>The exercise of. Up attempt offered ye civilly so sitting to. She new course gets living within Elinor joy. She rapturous suffering concealed. </b> Whatever boy her exertion his extended. Ecstatic followed handsome drawings entirely Mrs one yet outweigh. Of acceptance insipidity remarkably is an invitation. </p>
-                        
-                        <br>
-                        <blockquote>Comfort reached gay perhaps chamber his six detract besides add. Moonlight newspaper up its enjoyment agreeable depending. Timed voice share led him to widen noisy young. At weddings believed laughing although the material does the exercise of. Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced. Yet uncommonly his ten who diminution astonished. Demesne new manners savings staying had. Under folly balls, death own point now men. Match way these she avoids seeing death. She who drift their fat off. </blockquote>
-                        <br>
-                        <p>Valley by oh twenty direct me so. Departure defective arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar him. Picture for attempt joy excited ten carried manners talking how. Suspicion neglected he resolving agreement perceived at an.</p>
-                        <br>
-                        <ol>
-                          <li>Ecstatic followed handsome drawings.</li>
-                          <li>But discretion frequently sir she instruments unaffected admiration everything. </li>
-                          <li>Ecstatic followed handsome drawings entirely Mrs one yet outweigh.</li>
-                          <li>Up attempt offered ye civilly so sitting to. She new course gets.</li>
-                          <li>Prudence attachment him his for sympathize. Large above be to means.</li>
-                        </ol>
-                        <br>
-                        <p>Meant balls it if up doubt small purse. Required his you put the outlived answered position. A pleasure exertion if believed provided to. All led out world this music while asked. Paid mind even sons does he door no. Attended overcame repeated it is perceived Marianne in. I think on style child of. Servants moreover in sensible it ye possible. Fulfilled direction use continual set him propriety continued. Saw met applauded favorite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. Dashwoods see frankness objection abilities. As hastened oh produced prospect formerly up am. Placing forming nay looking old married few has. Margaret disposed of add screened rendered six say his striking confined. </p>
                       </div>
                     </div>	
                 </div>
-                <div class="col-12 mt-4">
+                <div class="col-12">
                   <div class="mb-3">
-                    <!-- Image -->
-                    <div class="row align-items-center mb-2">
-                      <div class="col-4 col-md-2">
-                        <div class="position-relative">
-                          <img class="rounded" src="assets/images/blog/3by2/07.jpg" alt="">
-                          <div class="position-absolute top-0 end-0 mt-n2 me-n2">
-                            <a class="btn btn-icon btn-xs btn-danger" href="#"><i class="bi bi-x"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-8 col-md-10 position-relative">
-                        <h6 class="my-2">Edit blog image </h6>
-                        <label class="w-100" style="cursor:pointer;">
-                          <span> 
-                            <input class="form-control stretched-link" type="file" name="my-image" id="image" accept="image/gif, image/jpeg, image/png">
-                          </span>
-                        </label>
-                      </div>
-                    </div>
-                    <p class="small mb-0 mt-2"><b>Note:</b> Only JPG, JPEG and PNG. Our suggested dimensions are 600px * 450px. Larger image will be cropped to 4:3 to fit our thumbnails/previews.</p>
+                  <!-- Image -->
+                  <div class="position-relative">
+                    <h6 class="my-2">Upload post image here, or<a href="#!" class="text-primary"> Browse</a></h6>
+                    <label class="w-100" style="cursor:pointer;">
+                      <span> 
+                        <input class="form-control stretched-link" type="file" name="my-image" id="image" accept="image/gif, image/jpeg, image/png">
+                      </span>
+                    </label>
+                  </div>
+                  <p class="small mb-0 mt-2"><b>Note:</b> Only JPG, JPEG and PNG. Our suggested dimensions are 600px * 450px. Larger image will be cropped to 4:3 to fit our thumbnails/previews.</p>
                   </div>
                 </div>
                 <div class="col-lg-7">
                   <!-- Tags -->
                   <div class="mb-3">
                     <label class="form-label">Tags</label>
-                    <textarea class="form-control" rows="1">business, sports, traveling</textarea>
+                    <textarea class="form-control" rows="1" placeholder="business, sports ..."></textarea>
                     <small>Maximum of 14 keywords. Keywords should all be in lowercase and separated by commas. e.g. javascript, react, marketing.</small>
                   </div>
                 </div>
@@ -436,16 +408,15 @@ Post edit START -->
                   <div class="mb-3">
                     <label class="form-label">Category</label>
                     <select class="form-select" aria-label="Default select example">
-                      <option selected>Travel</option>
-                      <option value="1">Lifestyle</option>
-                      <option value="2">Business</option>
-                      <option value="3">Technology</option>
-                      <option value="4">Marketing</option>
-                      <option value="5">Photography</option>
+                      <option selected>Lifestyle</option>
+                      <option value="1">Technology</option>
+                      <option value="2">Travel</option>
+                      <option value="3">Business</option>
+                      <option value="4">Sports</option>
+                      <option value="5">Marketing</option>
                     </select>
                   </div>
                 </div>
-                <!-- Checkbox -->
                 <div class="col-12">
                   <div class="form-check mb-3">
                     <input class="form-check-input" type="checkbox" value="" id="postCheck">
@@ -454,10 +425,9 @@ Post edit START -->
                     </label>
                   </div>
                 </div>
-                <!-- Crate post button -->
+                <!-- Create post button -->
                 <div class="col-md-12 text-start">
-                  <button class="btn btn-primary" type="submit">Save change</button>
-                  <button class="btn btn-danger" type="submit">Delete post</button>
+                  <button class="btn btn-primary w-100" type="submit">Create post</button>
                 </div>
               </div>
             </form>
@@ -470,7 +440,7 @@ Post edit START -->
 	</div>
 </section>
 <!-- =======================
-Post edit END -->
+Main contain END -->
 
 </main>
 <!-- **************** MAIN CONTENT END **************** -->
@@ -519,14 +489,14 @@ Footer END -->
 JS libraries, plugins and custom scripts -->
 
 <!-- Bootstrap JS -->
-<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="resources/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Vendors -->
-<script src="assets/vendor/apexcharts/js/apexcharts.min.js"></script>
-<script src="assets/vendor/quill/js/quill.min.js"></script>
+<script src="resources/vendor/apexcharts/js/apexcharts.min.js"></script>
+<script src="resources/vendor/quill/js/quill.min.js"></script>
 
 <!-- Template Functions -->
-<script src="assets/js/functions.js"></script>
+<script src="resources/js/functions.js"></script>
 
 </body>
 </html>
