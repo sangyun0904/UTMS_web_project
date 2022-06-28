@@ -38,7 +38,7 @@ Header START -->
 	<nav class="navbar navbar-expand-lg">
 		<div class="container">
 			<!-- Logo START -->
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand" href="/portfolio">
 				<img class="navbar-brand-item light-mode-item" src="resources/images/logo.svg" alt="logo">			
 				<img class="navbar-brand-item dark-mode-item" src="resources/images/logo-light.svg" alt="logo">			
 			</a>

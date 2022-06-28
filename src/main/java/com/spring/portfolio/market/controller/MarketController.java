@@ -51,6 +51,11 @@ public class MarketController {
 	public ModelAndView uploadForm() throws Exception {
 		return new ModelAndView("/market/newProduct");
 	}
+
+	@RequestMapping(value="/upload", method=RequestMethod.GET)
+	public ModelAndView upload() throws Exception {
+		return new ModelAndView("/market/uploadProduct");
+	}
 	
 	@RequestMapping(value="/uploadProduct" , method=RequestMethod.POST)
 	public ResponseEntity<String> uploadProduct(ProductDto productDto, HttpServletRequest request) throws Exception {
