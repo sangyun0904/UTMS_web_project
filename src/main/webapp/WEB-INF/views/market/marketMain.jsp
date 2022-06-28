@@ -322,22 +322,8 @@ Header START -->
 Header END -->
 
 <!-- **************** MAIN CONTENT START **************** -->
-<main>
+<main><br><br>
 
-<!-- =======================
-Inner intro START -->
-<section class="pt-4">
-	<div class="container">
-		<div class="row">
-      <div class="col-12">
-				<div class="bg-danger-soft p-4 text-center rounded-3">
-					<h1 class="text-danger m-0">Post grid style</h1>
-					<p class="lead m-0">Checkout our latest post</p>
-				</div>
-      </div>
-    </div>
-	</div>
-</section>
 <!-- =======================
 Inner intro END -->
 
@@ -700,6 +686,21 @@ Main content START -->
 </section>
 <!-- =======================
 Main content END -->
+<hr>
+<!-- =======================
+Inner intro START -->
+<section class="pt-4">
+	<div class="container">
+		<div class="row">
+      <div class="col-12">
+				<div class="bg-danger-soft p-4 text-center rounded-3">
+					<h1 class="text-danger m-0">Upload Product</h1>
+					<p class="lead m-0">sell product, earn money</p>
+				</div>
+      </div>
+    </div>
+	</div>
+</section>
 
 </main>
 <!-- **************** MAIN CONTENT END **************** -->
