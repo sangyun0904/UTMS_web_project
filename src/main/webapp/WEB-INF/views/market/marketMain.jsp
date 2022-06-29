@@ -94,7 +94,6 @@ Header START -->
 				</div>
 			</div>
 			<!-- Nav right END -->
-		</div>
 	</nav>
 	<!-- Logo Nav END -->
 </header>
