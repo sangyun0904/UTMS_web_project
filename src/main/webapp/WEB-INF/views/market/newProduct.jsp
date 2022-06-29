@@ -262,7 +262,7 @@ Main contain START -->
 					<!-- Card body -->
 					<div class="card-body">
             <!-- Form START -->
-            <form>
+            <form action="/portfolio/uploadProduct" method="post">
               <!-- Main form -->
               <div class="row">
                 <div class="col-12">
@@ -279,7 +279,7 @@ Main contain START -->
                     <div class="d-flex flex-wrap gap-3">
                       <!-- Post type item -->
                       <div class="flex-fill">
-                        <input type="radio" class="btn-check" name="productSort" id="option">
+                        <input type="radio" class="btn-check" name="productSort" id="option" value="house" checked>
                         <label class="btn btn-outline-light w-100" for="option">
                           <i class="bi bi-chat-left-text fs-1"></i>
                           <span class="d-block"> 가전/가구/인테리 </span>
@@ -287,7 +287,7 @@ Main contain START -->
                       </div>
                       <!-- Post type item -->
                       <div class="flex-fill">
-                        <input type="radio" class="btn-check" name="productSort" id="option2">
+                        <input type="radio" class="btn-check" name="productSort" id="option2" value="sports">
                         <label class="btn btn-outline-light w-100" for="option2">
                             <i class="bi bi-patch-question fs-1"></i>
                           <span class="d-block"> 스포츠/레저 </span>
@@ -295,7 +295,7 @@ Main contain START -->
                       </div>
                       <!-- Post type item -->
                       <div class="flex-fill">
-                        <input type="radio" class="btn-check" name="productSort" id="option3" checked>
+                        <input type="radio" class="btn-check" name="productSort" id="option3" value="fashion">
                         <label class="btn btn-outline-light w-100" for="option3">
                           <i class="bi bi-chat-right-dots fs-1"></i>
                           <span class="d-block"> 여성의류/남성패션/잡화 </span>
@@ -303,7 +303,7 @@ Main contain START -->
                       </div>
                       <!-- Post type item -->
                       <div class="flex-fill">
-                        <input type="radio" class="btn-check" name="productSort" id="option4">
+                        <input type="radio" class="btn-check" name="productSort" id="option4" value="beauty">
                         <label class="btn btn-outline-light w-100" for="option4">
                           <i class="bi bi-ui-checks-grid fs-1"></i>
                           <span class="d-block"> 뷰티/미용 </span>
@@ -311,7 +311,7 @@ Main contain START -->
                       </div>
                       <!-- Post type item -->
                       <div class="flex-fill">
-                        <input type="radio" class="btn-check" name="productSort" id="option5">
+                        <input type="radio" class="btn-check" name="productSort" id="option5" value="life">
                         <label class="btn btn-outline-light w-100" for="option5">
                           <i class="bi bi-camera-reels fs-1"></i>
                           <span class="d-block"> 도서/티켓/음반 </span>
@@ -319,10 +319,18 @@ Main contain START -->
                       </div>
                       <!-- Post type item -->
                       <div class="flex-fill">
-                        <input type="radio" class="btn-check" name="productSort" id="option6">
+                        <input type="radio" class="btn-check" name="productSort" id="option6" value="babies">
                         <label class="btn btn-outline-light w-100" for="option6">
                           <i class="bi bi-chat-square fs-1"></i>
                           <span class="d-block"> 유아용품 </span>
+                        </label>
+                      </div>
+                      <!-- Post type item -->
+                      <div class="flex-fill">
+                        <input type="radio" class="btn-check" name="productSort" id="option7" value="others">
+                        <label class="btn btn-outline-light w-100" for="option7">
+                          <i class="bi bi-chat-square fs-1"></i>
+                          <span class="d-block"> 기타 </span>
                         </label>
                       </div>
                     <!-- Post type item -->
@@ -334,8 +342,8 @@ Main contain START -->
               <!-- Short description -->
               <div class="col-12">
                 <div class="mb-3">
-                    <label class="form-label">Short description </label>
-                    <textarea class="form-control" rows="3" placeholder="Add description"></textarea>
+                    <label class="form-label">상품 설명 </label>
+                    <textarea class="form-control" rows="3" placeholder="Add description" name="productDesc"></textarea>
                 </div>
               </div>
 
@@ -343,7 +351,7 @@ Main contain START -->
                 <div class="col-md-12">
                   <!-- Subject -->
                   <div class="mb-3">
-                    <label class="form-label">Post body</label>
+                    <label class="form-label">상품 설명</label>
                     <!-- Editor toolbar -->
                       <div class="bg-light border border-bottom-0 rounded-top py-3" id="quilltoolbar">
                         <span class="ql-formats">
@@ -382,6 +390,13 @@ Main contain START -->
                     </div>	
                 </div>
                 <div class="col-12">
+                  <!-- Post name -->
+                  <div class="mb-3">
+                    <label class="form-label">상품 가격</label>&emsp;
+                    <input required id="con-name" name="productPrice" type="text" placeholder="0" style="text-align: right; padding-right: 5px;"> ₩
+                  </div>
+                </div>
+                <div class="col-12">
                   <div class="mb-3">
                   <!-- Image -->
                   <div class="position-relative">
@@ -395,39 +410,9 @@ Main contain START -->
                   <p class="small mb-0 mt-2"><b>Note:</b> Only JPG, JPEG and PNG. Our suggested dimensions are 600px * 450px. Larger image will be cropped to 4:3 to fit our thumbnails/previews.</p>
                   </div>
                 </div>
-                <div class="col-lg-7">
-                  <!-- Tags -->
-                  <div class="mb-3">
-                    <label class="form-label">Tags</label>
-                    <textarea class="form-control" rows="1" placeholder="business, sports ..."></textarea>
-                    <small>Maximum of 14 keywords. Keywords should all be in lowercase and separated by commas. e.g. javascript, react, marketing.</small>
-                  </div>
-                </div>
-                <div class="col-lg-5">
-                  <!-- Message -->
-                  <div class="mb-3">
-                    <label class="form-label">Category</label>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Lifestyle</option>
-                      <option value="1">Technology</option>
-                      <option value="2">Travel</option>
-                      <option value="3">Business</option>
-                      <option value="4">Sports</option>
-                      <option value="5">Marketing</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" value="" id="postCheck">
-                    <label class="form-check-label" for="postCheck">
-                      Make this post featured?
-                    </label>
-                  </div>
-                </div>
                 <!-- Create post button -->
                 <div class="col-md-12 text-start">
-                  <button class="btn btn-primary w-100" type="submit">Create post</button>
+                  <button class="btn btn-primary w-100" type="submit">판매하기</button>
                 </div>
               </div>
             </form>

@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +6,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<footer class="pb-0">
 	<div class="container">
 		<hr>
 		<!-- Widgets START -->
@@ -75,5 +75,6 @@
 		</div>
 		<!-- Widgets END -->
 	</div>
+</footer>
 </body>
 </html>

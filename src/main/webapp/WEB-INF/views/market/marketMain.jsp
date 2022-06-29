@@ -1,106 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="true" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>Blogzine - Blog and Magazine Bootstrap 5 Theme</title>
-	<!-- Meta Tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="Webestica.com">
-	<meta name="description" content="Bootstrap based News, Magazine and Blog Theme">
-
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="resources/images/favicon.ico">
-
-	<!-- Google Font -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-
-	<!-- Plugins CSS -->
-	<link rel="stylesheet" type="text/css" href="resources/vendor/font-awesome/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="resources/vendor/bootstrap-icons/bootstrap-icons.css">
-
-	<!-- Theme CSS -->
-	<link id="style-switch" rel="stylesheet" type="text/css" href="resources/css/style.css">
-
+<meta charset="UTF-8">
+<title>Insert title here</title>
 </head>
-
 <body>
-
-<!-- =======================
-Header START -->
-<header class="navbar-light navbar-sticky header-static">
-	<!-- Logo Nav START -->
-	<nav class="navbar navbar-expand-lg">
-		<div class="container">
-			<!-- Logo START -->
-			<a class="navbar-brand" href="/portfolio">
-				<img class="navbar-brand-item light-mode-item" src="resources/images/logo.svg" alt="logo">			
-				<img class="navbar-brand-item dark-mode-item" src="resources/images/logo-light.svg" alt="logo">			
-			</a>
-			<!-- Logo END -->
-
-			<!-- Responsive navbar toggler -->
-			<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="text-body h6 d-none d-sm-inline-block">Menu</span>
-			  <span class="navbar-toggler-icon"></span>
-		  </button>
-
-			<!-- Main navbar START -->
-			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<ul class="navbar-nav navbar-nav-scroll ms-auto">
-
-					<!-- Nav item 5 link-->
-					<c:if test="${sessionScope.memberInfo != null}">
-						<li class="nav-item"> <a class="nav-link" ><c:out value="${sessionScope.memberName}"/> 님</a></li>
-						<li class="nav-item"> <a class="nav-link" href="/portfolio/uploadProduct">물건 판매하기</a></li>
-					</c:if>
-				</ul>
-			</div>
-			<!-- Main navbar END -->
-				<!-- Nav additional link -->
-				<div class="nav-item dropdown dropdown-toggle-icon-none">
-					<a class="nav-link dropdown-toggle" role="button" href="#" id="navAdditionalLink" data-bs-toggle="dropdown" aria-expanded="false">
-						<i class="bi bi-three-dots fs-4"></i>
-					</a>
-					<ul class="dropdown-menu dropdown-menu-end min-w-auto shadow rounded text-end" aria-labelledby="navAdditionalLink">
-						<li><a class="dropdown-item fw-normal" href="#">About</a></li>
-						<li><a class="dropdown-item fw-normal" href="#">Newsletter</a></li>
-						<li><a class="dropdown-item fw-normal" href="#">Author</a></li>
-						<li><a class="dropdown-item fw-normal" href="#">#Tags</a></li>
-						<li><a class="dropdown-item fw-normal" href="#">Contact</a></li>
-						<li><a class="dropdown-item fw-normal" href="#"><span class="badge bg-danger me-2 align-middle">2 Job</span>Careers</a></li>
-					</ul>
-				</div>
-				<!-- Nav Button -->
-				<div class="nav-item d-none d-md-block">
-					<a href="/portfolio/loginForm" class="btn btn-sm btn-danger mb-0 mx-2">login!</a>
-				</div>
-				<!-- Nav Search -->
-				<div class="nav-item dropdown nav-search dropdown-toggle-icon-none">
-					<a class="nav-link pe-0 dropdown-toggle" role="button" href="#" id="navSearch" data-bs-toggle="dropdown" aria-expanded="false">
-						<i class="bi bi-search fs-4"> </i>
-					</a>
-					<div class="dropdown-menu dropdown-menu-end shadow rounded p-2" aria-labelledby="navSearch">
-					  <form class="input-group">
-					    <input class="form-control border-success" type="search" placeholder="Search" aria-label="Search">
-					    <button class="btn btn-success m-0" type="submit">Search</button>
-					  </form>
-					</div>
-				</div>
-			</div>
-			<!-- Nav right END -->
-	</nav>
-	<!-- Logo Nav END -->
-</header>
-<!-- =======================
-Header END -->
-
-<!-- **************** MAIN CONTENT START **************** -->
 <main><br><br>
 
 <!-- =======================
@@ -401,7 +306,7 @@ Main content START -->
 							<div class="card mb-3">
 								<div class="row g-3">
 									<div class="col-4">
-										<img class="rounded" src="resources/images/blog/4by3/thumb/01.jpg" alt="">
+										<img class="rounded" src="${contextPath }/resources/images/blog/4by3/thumb/01.jpg" alt="">
 									</div>
 									<div class="col-8">
 										<h6><a href="post-single-2.html" class="btn-link stretched-link text-reset fw-bold">The pros and cons of business agency</a></h6>
@@ -413,7 +318,7 @@ Main content START -->
 							<div class="card mb-3">
 								<div class="row g-3">
 									<div class="col-4">
-										<img class="rounded" src="resources/images/blog/4by3/thumb/02.jpg" alt="">
+										<img class="rounded" src="${contextPath }/resources/images/blog/4by3/thumb/02.jpg" alt="">
 									</div>
 									<div class="col-8">
 										<h6><a href="post-single-2.html" class="btn-link stretched-link text-reset fw-bold">5 reasons why you shouldn't startup</a></h6>
@@ -425,7 +330,7 @@ Main content START -->
 							<div class="card mb-3">
 								<div class="row g-3">
 									<div class="col-4">
-										<img class="rounded" src="resources/images/blog/4by3/thumb/03.jpg" alt="">
+										<img class="rounded" src="${contextPath }/resources/images/blog/4by3/thumb/03.jpg" alt="">
 									</div>
 									<div class="col-8">
 										<h6><a href="post-single-2.html" class="btn-link stretched-link text-reset fw-bold">Ten questions you should answer truthfully.</a></h6>
@@ -437,7 +342,7 @@ Main content START -->
 							<div class="card mb-3">
 								<div class="row g-3">
 									<div class="col-4">
-										<img class="rounded" src="resources/images/blog/4by3/thumb/04.jpg" alt="">
+										<img class="rounded" src="${contextPath }/resources/images/blog/4by3/thumb/04.jpg" alt="">
 									</div>
 									<div class="col-8">
 										<h6><a href="post-single-2.html" class="btn-link stretched-link text-reset fw-bold">Five unbelievable facts about money.</a></h6>
@@ -482,97 +387,5 @@ Inner intro START -->
 </section>
 
 </main>
-<!-- **************** MAIN CONTENT END **************** -->
-
-<!-- =======================
-Footer START -->
-<footer class="pb-0">
-	<div class="container">
-		<hr>
-		<!-- Widgets START -->
-		<div class="row pt-5">
-			<!-- Footer Widget -->
-			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="light-mode-item" src="resources/images/logo.svg" alt="logo">			
-				<img class="dark-mode-item" src="resources/images/logo-light.svg" alt="logo">
-				<p class="mt-3">The next-generation blog, news, and magazine theme for you to start sharing your stories today! This Bootstrap 5 based theme is ideal for all types of sites that deliver the news.</p>
-				<div class="mt-4">©2022 <a href="https://www.webestica.com/" class="text-reset btn-link" target="_blank">Webestica</a>. All rights reserved
-				</div>
-			</div>
-
-			<!-- Footer Widget -->
-			<div class="col-md-6 col-lg-3 mb-4">
-				<h5 class="mb-4">Navigation</h5>
-				<div class="row">
-					<div class="col-6">
-						<ul class="nav flex-column">
-							<li class="nav-item"><a class="nav-link pt-0" href="#">Features</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Style Guide</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Get Theme</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-						</ul>
-					</div>
- 					<div class="col-6">
-						<ul class="nav flex-column">
-							<li class="nav-item"><a class="nav-link pt-0" href="#">News</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Career <span class="badge bg-danger ms-2">2 Job</span></a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Technology</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Startups</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Gadgets</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			<!-- Footer Widget -->
-			<div class="col-sm-6 col-lg-3 mb-4">
-				<h5 class="mb-4">Browse by Tag</h5>
-				<ul class="list-inline">
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Travel</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Business</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Tech</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Gadgets</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Lifestyle</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Vaccine</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Marketing</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Sports</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Covid-19</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Politics</a></li>
-				</ul>
-			</div>
-
-			<!-- Footer Widget -->
-			<div class="col-sm-6 col-lg-2 mb-4">
-				<h5 class="mb-4">Our Social handles</h5>
-				<ul class="nav flex-column">
-					<li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-facebook-square fa-fw me-2 text-facebook"></i>Facebook</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter-square fa-fw me-2 text-twitter"></i>Twitter</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-linkedin fa-fw me-2 text-linkedin"></i>Linkedin</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-youtube-square fa-fw me-2 text-youtube"></i>YouTube</a></li>
-				</ul>
-			</div>
-		</div>
-		<!-- Widgets END -->
-	</div>
-</footer>
-<!-- =======================
-Footer END -->
-
-<!-- Back to top -->
-<div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
-
-<!-- =======================
-JS libraries, plugins and custom scripts -->
-
-<!-- Bootstrap JS -->
-<script src="resources/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Vendors -->
-<script src="resources/vendor/sticky-js/sticky.min.js"></script>
-
-<!-- Template Functions -->
-<script src="resources/js/functions.js"></script>
-
 </body>
 </html>
