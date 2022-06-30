@@ -262,7 +262,7 @@ Main contain START -->
 					<!-- Card body -->
 					<div class="card-body">
             <!-- Form START -->
-            <form action="/portfolio/uploadProduct" method="post">
+            <form action="/portfolio/uploadProduct" method="post" enctype="multipart/form-data">
               <!-- Main form -->
               <div class="row">
                 <div class="col-12">

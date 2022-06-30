@@ -22,6 +22,12 @@ import com.spring.portfolio.market.service.MarketService;
 @Controller
 public class MarketController {
 	
+	private static final String CURR_IMAGE_REPO_PATH = "C:\\file_repo";
+	String seperatorPath = "\\";	// window
+
+	//private static final String CURR_IMAGE_REPO_PATH = "/var/lib/tomcat8/file_repo";
+	//String seperatorPath = "/";		// linux
+	
 	@Autowired
 	private MarketService marketService;
 	
@@ -65,14 +71,14 @@ public class MarketController {
 		multipartRequest.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset=UTF-8");
 
-		HttpSession session = multipartRequest.getSession();
+		//HttpSession session = multipartRequest.getSession();
 		ProductDto productDto = new ProductDto();
 		productDto.setProductName(multipartRequest.getParameter("productName"));
 		int productPrice = Integer.parseInt(multipartRequest.getParameter("productPrice"));
 		productDto.setProductPrice(productPrice);
 		productDto.setProductDesc(multipartRequest.getParameter("productDesc"));
 		productDto.setProductSort(multipartRequest.getParameter("productSort"));
-		productDto.setProductSeller((String)session.getAttribute("memberInfo"));
+		//productDto.setProductSeller((String)session.getAttribute("memberInfo"));
 		System.out.println(productDto);
 		marketService.addProduct(productDto);
 		
