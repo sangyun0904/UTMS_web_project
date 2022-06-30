@@ -14,7 +14,7 @@
 		<div class="container">
 			<!-- Logo START -->
 			<a class="navbar-brand" href="/portfolio">
-				<img class="navbar-brand-item light-mode-item" src="resources/images/logo.svg" alt="logo">			
+				<img class="navbar-brand-item light-mode-item" src="resources/images/logo.png" alt="logo">			
 				<img class="navbar-brand-item dark-mode-item" src="resources/images/logo-light.svg" alt="logo">			
 			</a>
 			<!-- Logo END -->
@@ -44,7 +44,7 @@
 			</c:when>
 			<c:otherwise>
 				<!-- Nav Button -->
-				<div class="nav-item d-none d-md-block">
+				<div class="collapse navbar-collapse">
 					<a href="/portfolio/loginForm" class="btn btn-sm btn-danger mb-0 mx-2">login!</a>
 				</div>
 			</c:otherwise>
