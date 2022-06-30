@@ -1,6 +1,10 @@
 package com.spring.portfolio.market.controller;
 
+import java.io.File;
+import java.io.OutputStream;
+import java.util.Iterator;
 import java.util.List;
+import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,11 +17,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.portfolio.market.dto.ProductDto;
 import com.spring.portfolio.market.service.MarketService;
+
+import net.coobird.thumbnailator.Thumbnails;
 
 @Controller
 public class MarketController {
@@ -71,14 +79,31 @@ public class MarketController {
 		multipartRequest.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset=UTF-8");
 
-		//HttpSession session = multipartRequest.getSession();
+		HttpSession session = multipartRequest.getSession();
 		ProductDto productDto = new ProductDto();
 		productDto.setProductName(multipartRequest.getParameter("productName"));
 		int productPrice = Integer.parseInt(multipartRequest.getParameter("productPrice"));
 		productDto.setProductPrice(productPrice);
 		productDto.setProductDesc(multipartRequest.getParameter("productDesc"));
 		productDto.setProductSort(multipartRequest.getParameter("productSort"));
-		//productDto.setProductSeller((String)session.getAttribute("memberInfo"));
+		productDto.setProductSeller((String)session.getAttribute("memberInfo"));
+		
+		Iterator<String> file = multipartRequest.getFileNames();
+		if (file.hasNext()) {
+			
+			MultipartFile uploadFile = multipartRequest.getFile(file.next()); 	
+			
+			if(!uploadFile.getOriginalFilename().isEmpty()) {
+			
+				String fileName = UUID.randomUUID() + "_" + uploadFile.getOriginalFilename();
+				
+				File f = new File(CURR_IMAGE_REPO_PATH + seperatorPath + fileName);	
+				uploadFile.transferTo(f); 
+				productDto.setProductImages(fileName);
+			}
+		
+		}
+		
 		System.out.println(productDto);
 		marketService.addProduct(productDto);
 		
@@ -91,6 +116,22 @@ public class MarketController {
 	    responseHeaders.add("Content-Type", "text/html; charset=utf-8");
 			   
 		return new ResponseEntity<String>(message, responseHeaders, HttpStatus.OK);
+		
+	}
+	
+	@RequestMapping("/thumbnails")
+	public void thumbnails(@RequestParam("goodsFileName") String goodsFileName , HttpServletResponse response) throws Exception {
+	
+		OutputStream out = response.getOutputStream();
+		String filePath = CURR_IMAGE_REPO_PATH + seperatorPath + goodsFileName;
+		
+		File image = new File(filePath);
+		if (image.exists()) { 
+			Thumbnails.of(image).size(121,154).outputFormat("png").toOutputStream(out);
+		}
+		byte[] buffer = new byte[1024 * 8];
+		out.write(buffer);
+		out.close();
 		
 	}
 

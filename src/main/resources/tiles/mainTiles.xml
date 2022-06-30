@@ -13,5 +13,14 @@
 		<put-attribute name="title" value="메인" />
 	</definition>
 	
+	<definition name="/member/loginForm" 			extends="main" >
+		<put-attribute name="body" 	value="/WEB-INF/views/member/loginForm.jsp" />		
+		<put-attribute name="title" value="로그인" />
+	</definition>
+	
+	<definition name="/member/memberForm" 			extends="main" >
+		<put-attribute name="body" 	value="/WEB-INF/views/member/memberForm.jsp" />		
+		<put-attribute name="title" value="회원가입" />
+	</definition>
 	
 </tiles-definitions>

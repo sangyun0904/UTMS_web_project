@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +27,7 @@ Main content START -->
 						<div class="card">
 							<!-- Card img -->
 							<div class="position-relative">
-								<img class="card-img" src="resources/images/blog/4by3/01.jpg" alt="Card image">
+								<img class="card-img" alt="Card image" src="${contextPath}/portfolio/thumbnails?goodsFileName=${product.productImages}">
 								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
 									<!-- Card overlay bottom -->
 									<div class="w-100 mt-auto">
@@ -45,7 +47,7 @@ Main content START -->
 												<div class="avatar avatar-xs">
 													<img class="avatar-img rounded-circle" src="resources/images/avatar/08.jpg" alt="avatar">
 												</div>
-												<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link">${product.productSeller }</a></span>
+												<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link"><c:out value="${sessionScope.memberName}"/></a></span>
 											</div>
 										</div>
 									</li>
