@@ -13,7 +13,7 @@
 	<nav class="navbar navbar-expand-lg">
 		<div class="container">
 			<!-- Logo START -->
-			<a class="navbar-brand" href="/portfolio">
+			<a class="navbar-brand" href="/utms">
 				<img class="navbar-brand-item light-mode-item" src="resources/images/logo.png" alt="logo">			
 				<img class="navbar-brand-item dark-mode-item" src="resources/images/logo-light.svg" alt="logo">			
 			</a>
@@ -31,7 +31,7 @@
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<!-- Nav item 5 link-->
 					<ul class="navbar-nav navbar-nav-scroll ms-auto">
-							<li class="nav-item"> <a class="nav-link" href="/portfolio/uploadProduct">물건 판매하기</a></li>
+							<li class="nav-item"> <a class="nav-link" href="/utms/uploadProduct">물건 판매하기</a></li>
 							<li class="nav-item"> <a class="nav-link" ><c:out value="${sessionScope.memberName}"/> 님</a></li>
 					</ul>
 					<!-- Avatar -->
@@ -45,7 +45,7 @@
 			<c:otherwise>
 				<!-- Nav Button -->
 				<div class="collapse navbar-collapse">
-					<a href="/portfolio/loginForm" class="btn btn-sm btn-danger mb-0 mx-2">login!</a>
+					<a href="/utms/loginForm" class="btn btn-sm btn-danger mb-0 mx-2">login!</a>
 				</div>
 			</c:otherwise>
 		</c:choose>

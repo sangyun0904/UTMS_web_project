@@ -40,7 +40,7 @@
 	        <div class="p-4 p-sm-5 bg-primary-soft rounded">
 						<h2>Log in to your account</h2>
 						<!-- Form START -->
-						<form class="mt-4" action="/portfolio/login" method="post">
+						<form class="mt-4" action="/utms/login" method="post">
 							<!-- Email -->
 							<div class="mb-3">
 								<label class="form-label" for="exampleInputEmail1">ID</label>
@@ -62,7 +62,7 @@
 									<button type="submit" class="btn btn-success">Sign me in</button>
 								</div>
 								<div class="col-sm-8 text-sm-end">
-									<span>Don't have an account? <a href="/portfolio/memberForm"><u>Sign up</u></a></span>
+									<span>Don't have an account? <a href="/utms/memberForm"><u>Sign up</u></a></span>
 								</div>
 							</div>
 						</form>

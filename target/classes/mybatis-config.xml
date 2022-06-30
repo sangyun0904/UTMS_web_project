@@ -8,8 +8,8 @@
 	</settings>
 	
 	<typeAliases>
-		<typeAlias type="com.spring.portfolio.member.dto.MemberDto"		alias="MemberDto" />
-		<typeAlias type="com.spring.portfolio.market.dto.ProductDto" 	alias="ProductDto"/>
+		<typeAlias type="com.spring.utms.member.dto.MemberDto"		alias="MemberDto" />
+		<typeAlias type="com.spring.utms.market.dto.ProductDto" 	alias="ProductDto"/>
 	</typeAliases>
 
 </configuration>

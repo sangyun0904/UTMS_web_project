@@ -27,7 +27,7 @@ Main content START -->
 						<div class="card">
 							<!-- Card img -->
 							<div class="position-relative">
-								<img class="card-img" alt="Card image" src="${contextPath}/portfolio/thumbnails?goodsFileName=${product.productImages}">
+								<img class="card-img" alt="Card image" src="${contextPath}/utms/thumbnails?goodsFileName=${product.productImages}">
 								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
 									<!-- Card overlay bottom -->
 									<div class="w-100 mt-auto">
@@ -37,7 +37,7 @@ Main content START -->
 								</div>
 							</div>
 							<div class="card-body px-0 pt-3">
-								<h4 class="card-title"><a href="/portfolio/productInfo?num=${product.productId }"  class="btn-link text-reset fw-bold">${product.productName }</a></h4>
+								<h4 class="card-title"><a href="/utms/productInfo?num=${product.productId }"  class="btn-link text-reset fw-bold">${product.productName }</a></h4>
 								<p class="card-text">${product.productDesc }</p>
 								<!-- Card info -->
 								<ul class="nav nav-divider align-items-center d-none d-sm-inline-block">

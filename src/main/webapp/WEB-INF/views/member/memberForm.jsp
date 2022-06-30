@@ -374,7 +374,7 @@ Inner intro START -->
         <div class="bg-primary-soft rounded p-4 p-sm-5">
 					<h2>Create your free account </h2>
 					<!-- Form START -->
-					<form class="mt-4" action="/portfolio/memberForm" method="post">
+					<form class="mt-4" action="/utms/memberForm" method="post">
 						<!-- Email -->
 						<div class="mb-3">
 							<label class="form-label" for="exampleInputEmail1">Email address</label>
