@@ -27,7 +27,7 @@ Main content START -->
 						<div class="card">
 							<!-- Card img -->
 							<div class="position-relative">
-								<img class="card-img" alt="Card image" src="${contextPath}/utms/thumbnails?goodsFileName=${product.productImages}">
+								<img class="card-img" alt="Card image" style="width:400px;height:300px;" src="${contextPath}/utms/thumbnails?goodsFileName=${product.productImages}">
 								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
 									<!-- Card overlay bottom -->
 									<div class="w-100 mt-auto">
@@ -301,59 +301,6 @@ Main content START -->
 					<!-- Trending topics widget END -->
 
 					<div class="row">
-						<!-- Recent post widget START -->
-						<div class="col-12 col-sm-6 col-lg-12">
-							<h4 class="mt-4 mb-3">Recent post</h4>
-							<!-- Recent post item -->
-							<div class="card mb-3">
-								<div class="row g-3">
-									<div class="col-4">
-										<img class="rounded" src="${contextPath }/resources/images/blog/4by3/thumb/01.jpg" alt="">
-									</div>
-									<div class="col-8">
-										<h6><a href="post-single-2.html" class="btn-link stretched-link text-reset fw-bold">The pros and cons of business agency</a></h6>
-										<div class="small mt-1">May 17, 2022</div>
-									</div>
-								</div>
-							</div>
-							<!-- Recent post item -->
-							<div class="card mb-3">
-								<div class="row g-3">
-									<div class="col-4">
-										<img class="rounded" src="${contextPath }/resources/images/blog/4by3/thumb/02.jpg" alt="">
-									</div>
-									<div class="col-8">
-										<h6><a href="post-single-2.html" class="btn-link stretched-link text-reset fw-bold">5 reasons why you shouldn't startup</a></h6>
-										<div class="small mt-1">Apr 04, 2022</div>
-									</div>
-								</div>
-							</div>
-							<!-- Recent post item -->
-							<div class="card mb-3">
-								<div class="row g-3">
-									<div class="col-4">
-										<img class="rounded" src="${contextPath }/resources/images/blog/4by3/thumb/03.jpg" alt="">
-									</div>
-									<div class="col-8">
-										<h6><a href="post-single-2.html" class="btn-link stretched-link text-reset fw-bold">Ten questions you should answer truthfully.</a></h6>
-										<div class="small mt-1">Jun 30, 2022</div>
-									</div>
-								</div>
-							</div>
-							<!-- Recent post item -->
-							<div class="card mb-3">
-								<div class="row g-3">
-									<div class="col-4">
-										<img class="rounded" src="${contextPath }/resources/images/blog/4by3/thumb/04.jpg" alt="">
-									</div>
-									<div class="col-8">
-										<h6><a href="post-single-2.html" class="btn-link stretched-link text-reset fw-bold">Five unbelievable facts about money.</a></h6>
-										<div class="small mt-1">Nov 29, 2022</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Recent post widget END -->
 
 						<!-- ADV widget START -->
 						<div class="col-12 col-sm-6 col-lg-12 my-4">

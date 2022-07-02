@@ -13,6 +13,11 @@
 		<put-attribute name="title" value="메인" />
 	</definition>
 	
+	<definition name="/market/productInfo" 			extends="main" >
+		<put-attribute name="body" 	value="/WEB-INF/views/market/productInfo.jsp" />		
+		<put-attribute name="title" value="회원가입" />
+	</definition>
+	
 	<definition name="/member/loginForm" 			extends="main" >
 		<put-attribute name="body" 	value="/WEB-INF/views/member/loginForm.jsp" />		
 		<put-attribute name="title" value="로그인" />
