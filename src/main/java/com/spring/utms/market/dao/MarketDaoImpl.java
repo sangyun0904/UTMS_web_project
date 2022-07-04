@@ -35,4 +35,9 @@ public class MarketDaoImpl implements MarketDao{
 		sqlSession.update("mapper.market.increaseViews", num);
 	}
 
+	@Override
+	public void insertComment(String content) throws Exception {
+		sqlSession.insert("mapper.comment.insertNewComment" , content);
+	}
+
 }

@@ -63,6 +63,20 @@ public class MarketController {
 		return mv;
 	}
 	
+	@RequestMapping(value="/productInfo" , method=RequestMethod.POST)
+	public ModelAndView productInfo(int num, String content) throws Exception {
+		
+		marketService.addComment(content);
+		ProductDto productDto = marketService.getOneProduct(num);
+		
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/market/productInfo");
+		mv.addObject("productDto", productDto);
+		
+		return mv;
+		
+	}
+	
 	@RequestMapping(value="/uploadProduct", method=RequestMethod.GET)
 	public ModelAndView uploadForm() throws Exception {
 		return new ModelAndView("/market/newProduct");

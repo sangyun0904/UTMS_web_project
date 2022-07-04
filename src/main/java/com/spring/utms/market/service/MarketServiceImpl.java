@@ -30,4 +30,9 @@ public class MarketServiceImpl implements MarketService{
 		return marketDao.selectOneProduct(num);
 	}
 
+	@Override
+	public void addComment(String content) throws Exception {
+		marketDao.insertComment(content);
+	}
+
 }
