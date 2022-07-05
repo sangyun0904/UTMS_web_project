@@ -1,6 +1,8 @@
 package com.spring.utms.market.dao;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,8 +38,20 @@ public class MarketDaoImpl implements MarketDao{
 	}
 
 	@Override
-	public void insertComment(String content) throws Exception {
-		sqlSession.insert("mapper.comment.insertNewComment" , content);
+	public void insertComment(int productId, String content, String memberId) throws Exception {
+		
+		Map<String, Object> orderMap = new HashMap<String, Object>();
+		
+		orderMap.put("productId", productId);
+		orderMap.put("content", content);
+		orderMap.put("memberId", memberId);
+		
+		sqlSession.insert("mapper.comment.insertNewComment" , orderMap);
+	}
+
+	@Override
+	public List<Map<String, Object>> selectAllComments(int num) {
+		return sqlSession.selectList("mapper.comment.getAllComments");
 	}
 
 }

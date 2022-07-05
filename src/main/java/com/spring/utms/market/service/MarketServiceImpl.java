@@ -1,6 +1,7 @@
 package com.spring.utms.market.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,8 +32,13 @@ public class MarketServiceImpl implements MarketService{
 	}
 
 	@Override
-	public void addComment(String content) throws Exception {
-		marketDao.insertComment(content);
+	public void addComment(int productId, String content, String memberId) throws Exception {
+		marketDao.insertComment(productId, content, memberId);	
+	}
+
+	@Override
+	public List<Map<String, Object>> getComments(int num) {
+		return marketDao.selectAllComments(num);
 	}
 
 }

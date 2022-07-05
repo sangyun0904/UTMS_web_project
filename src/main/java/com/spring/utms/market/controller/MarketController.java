@@ -59,19 +59,22 @@ public class MarketController {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/market/productInfo");
 		mv.addObject("productDto", productDto);
+		mv.addObject("commentMapList", marketService.getComments(num));
 		
 		return mv;
 	}
 	
 	@RequestMapping(value="/productInfo" , method=RequestMethod.POST)
-	public ModelAndView productInfo(int num, String content) throws Exception {
+	public ModelAndView productInfo(String content, String memberId, int productId) throws Exception {
 		
-		marketService.addComment(content);
+		int num = productId;
+		marketService.addComment(productId, content, memberId);
 		ProductDto productDto = marketService.getOneProduct(num);
 		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/market/productInfo");
 		mv.addObject("productDto", productDto);
+		mv.addObject("commentMapList", marketService.getComments(num));
 		
 		return mv;
 		

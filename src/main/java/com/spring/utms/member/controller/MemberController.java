@@ -41,7 +41,7 @@ public class MemberController {
 		if (memberDto != null) {
 			HttpSession session = request.getSession();
 			session.setAttribute("isLogOn", true);
-			session.setAttribute("memberInfo", memberDto.getMemberId());
+			session.setAttribute("memberId", memberDto.getMemberId());
 			session.setAttribute("memberName", memberDto.getMemberName());
 			htmlBody += "<script>";
 			htmlBody += "alert('Welcome " + memberDto.getMemberName() + "!');";
@@ -67,7 +67,7 @@ public class MemberController {
 		session.setAttribute("isLogOn", false);
 		session.invalidate(); 
 		
-		mv.setViewName("/");
+		mv.setViewName("/member/marketMain");
 		
 		return mv;
 		

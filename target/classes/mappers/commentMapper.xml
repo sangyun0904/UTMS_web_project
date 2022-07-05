@@ -2,12 +2,38 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="mapper.comment">
+
+ 	<resultMap type="Hashmap" id="comment_info">
+ 		<result column="MEMBER_NAME"	 property="memberName"/>
+ 		<result column="COMMENT_CONTENT" property="commentContent"/>
+ 		<result column="COMMENT_LIKES"	 property="commentLikes"/>
+ 	</resultMap>
 	
-	<insert id="insertNewComment" parameterType="String">
+	<insert id="insertNewComment" parameterType="hashmap">
 		INSERT INTO
 				T_COMMENT (
-					
+					MEMBER_ID,
+					PRODUCT_ID,
+					COMMENT_CONTENT,
+					COMMENT_LIKES
+				)
+				VALUES (
+					#{memberId},
+					#{productId},
+					#{content},
+					0
 				)
 	</insert>
+	
+	<select id="getAllComments" resultMap="comment_info">
+		SELECT
+				M.MEMBER_NAME,
+				C.COMMENT_CONTENT,
+				C.COMMENT_LIKES
+		FROM
+				T_COMMENT AS C
+			   INNER JOIN T_MEMBER AS M
+			   		   ON C.MEMBER_ID = M.MEMBER_ID;
+	</select>
 	
 </mapper>

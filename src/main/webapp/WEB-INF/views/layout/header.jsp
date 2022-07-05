@@ -27,8 +27,9 @@
 
 			<!-- Main navbar START -->
 		<c:choose>
-			<c:when test="${sessionScope.memberInfo != null}">
+			<c:when test="${sessionScope.memberId != null}">
 				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<a href="/utms/logout" class="btn btn-sm btn-danger mb-0 mx-2">logout!</a>
 					<!-- Nav item 5 link-->
 					<ul class="navbar-nav navbar-nav-scroll ms-auto">
 							<li class="nav-item"> <a class="nav-link" href="/utms/uploadProduct">물건 판매하기</a></li>

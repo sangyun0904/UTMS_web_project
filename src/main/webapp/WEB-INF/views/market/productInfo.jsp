@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -230,19 +231,22 @@ Main START -->
 
 				<!-- Comments START -->
 				<div class="mt-5">
+				
 					<h3>5 comments</h3>
-					<!-- Comment level 1-->
-					<div class="my-4 d-flex">
-					  <img class="avatar avatar-md rounded-circle float-start me-3" src="resources/images/avatar/01.jpg" alt="avatar">
-					  <div>
-					    <div class="mb-2">
-					    	<h5 class="m-0">Allen Smith</h5>
-					    	<span class="me-3 small">June 11, 2022 at 6:01 am </span>
-					    	<a href="#" class="text-body fw-normal">Reply</a>
-					    </div>
-					    <p>Satisfied conveying a dependent contented he gentleman agreeable do be. Warrant private blushes removed an in equally totally if. Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do. </p>
-					  </div>
-					</div>
+					  <c:forEach var="commentMap" items="${commentMapList }">
+						<!-- Comment level 1-->
+						<div class="my-4 d-flex">
+						  <img class="avatar avatar-md rounded-circle float-start me-3" src="resources/images/avatar/01.jpg" alt="avatar">
+						  <div>
+						    <div class="mb-2">
+						    	<h5 class="m-0"> ${commentMap.memberName } </h5>
+						    	<span class="me-3 small">June 11, 2022 at 6:01 am </span>
+						    	<a href="#" class="text-body fw-normal">Reply</a>
+						    </div>
+						    <p> ${commentMap.commentContent } </p>
+						  </div>
+						</div>
+					  </c:forEach>
 						<!-- Comment children level 2 -->
 						<div class="my-4 d-flex ps-2 ps-md-3">
 						  <img class="avatar avatar-md rounded-circle float-start me-3" src="resources/images/avatar/02.jpg" alt="avatar">
@@ -298,7 +302,9 @@ Main START -->
 				<div>
 					<h3>Leave a reply</h3>
 					<small>Your email address will not be published. Required fields are marked *</small>
-					<form class="row g-3 mt-2">
+					<form class="row g-3 mt-2" method="post">
+					  <input type="hidden" name="productId" value="${productDto.productId }">
+					  <input type="hidden" name="memberId" value="<c:out value="${sessionScope.memberId}"/>">
 					  <div class="col-md-6">
 					    <label class="form-label">Name *</label>
 					    <input type="text" class="form-control" aria-label="First name">
@@ -316,7 +322,7 @@ Main START -->
 						</div>
 					  <div class="col-12">
 					    <label class="form-label">Your Comment *</label>
-					  	<textarea class="form-control" rows="3"></textarea>
+					  	<textarea class="form-control" rows="3" name="content"></textarea>
 					  </div>
 					  <div class="col-12">
 					    <button type="submit" class="btn btn-primary">Post comment</button>
