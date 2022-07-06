@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -321,7 +320,7 @@ Author single START -->
 								</div>
 								<!-- Info -->
 								<div class="ms-3">
-									<h5 class="mb-0">Larry Lawson</h5>
+									<h5 class="mb-0">${memberDto.memberName }</h5>
 									<p class="mb-0 small">Editor at Blogzine</p>
 								</div>
 							</div>

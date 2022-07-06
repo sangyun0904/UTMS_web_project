@@ -30,11 +30,11 @@ import net.coobird.thumbnailator.Thumbnails;
 @Controller
 public class MarketController {
 	
-	//private static final String CURR_IMAGE_REPO_PATH = "C:\\file_repo";
-	//String seperatorPath = "\\";	// window
+	private static final String CURR_IMAGE_REPO_PATH = "C:\\file_repo";
+	String seperatorPath = "\\";	// window
 
-	private static final String CURR_IMAGE_REPO_PATH = "/var/lib/tomcat8/file_repo";
-	String seperatorPath = "/";		// linux
+	//private static final String CURR_IMAGE_REPO_PATH = "/var/lib/tomcat8/file_repo";
+	//String seperatorPath = "/";		// linux
 	
 	@Autowired
 	private MarketService marketService;
@@ -135,7 +135,7 @@ public class MarketController {
 		
 		String message  = "<script>";
 			   message += " alert('상품이 등록되었습니다.');";
-			   message += " location.href='/utms/productList';";
+			   message += " location.href='/productList';";
 			   message += " </script>";
 			   
 	    HttpHeaders responseHeaders = new HttpHeaders();

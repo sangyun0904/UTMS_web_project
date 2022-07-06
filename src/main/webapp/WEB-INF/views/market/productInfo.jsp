@@ -42,7 +42,7 @@ Inner intro START -->
 		<div class="row align-items-center">
 			<!-- Image -->
 			<div class="col-md-6 position-relative">
-				<img class="card-img" alt="Card image"  style="width:400px;height:300px;" src="${contextPath}/utms/thumbnails?goodsFileName=${productDto.productImages}">
+				<img class="card-img" alt="Card image"  style="width:400px;height:300px;" src="${contextPath}/thumbnails?goodsFileName=${productDto.productImages}">
 				<!-- Card format icon -->
 				<h5 class="p-3 pe-4 position-absolute top-0 end-0">
 					<span class="badge bg-success text-white fw-bold rounded-pill"> 8.5 rating</span>

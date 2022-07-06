@@ -33,7 +33,7 @@
                 #{smsstsYn},
                 #{emailstsYn},
                 NOW()
-        )
+        );
 	</insert>
 	
 	<select id="login" resultType="MemberDto" parameterType="hashmap">
@@ -42,7 +42,16 @@
 		FROM
 				T_MEMBER
 		WHERE
-				MEMBER_ID = #{memberId} AND MEMBER_PW = #{memberPw}
+				MEMBER_ID = #{memberId} AND MEMBER_PW = #{memberPw};
+	</select>
+	
+	<select id="getMemberInfo" resultType="MemberDto">
+		SELECT
+				*
+		FROM
+				T_MEMBER
+		WHERE
+				MEMBER_ID = #{memberId};
 	</select>
 
 </mapper>

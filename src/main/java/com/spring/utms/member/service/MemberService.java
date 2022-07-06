@@ -9,5 +9,7 @@ public interface MemberService {
 	public void addMember(MemberDto memberDto) throws Exception;
 
 	public MemberDto login(Map<String, String> loginMap) throws Exception;
+
+	public MemberDto getMemberInfo(String attribute) throws Exception;
 	
 }

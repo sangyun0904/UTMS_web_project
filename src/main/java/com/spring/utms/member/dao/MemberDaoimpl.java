@@ -24,4 +24,9 @@ public class MemberDaoimpl implements MemberDao{
 		return sqlSession.selectOne("mapper.member.login", loginMap);
 	}
 
+	@Override
+	public MemberDto selectMemberInfo(String memberId) throws Exception {
+		return sqlSession.selectOne("mapper.member.getMemberInfo", memberId);
+	}
+
 }

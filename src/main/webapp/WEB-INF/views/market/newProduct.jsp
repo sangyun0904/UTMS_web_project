@@ -262,7 +262,7 @@ Main contain START -->
 					<!-- Card body -->
 					<div class="card-body">
             <!-- Form START -->
-            <form action="/utms/uploadProduct" method="post" enctype="multipart/form-data">
+            <form action="/uploadProduct" method="post" enctype="multipart/form-data">
               <!-- Main form -->
               <div class="row">
                 <div class="col-12">

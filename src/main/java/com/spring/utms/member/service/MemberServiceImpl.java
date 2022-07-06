@@ -24,5 +24,10 @@ public class MemberServiceImpl implements MemberService{
 	public MemberDto login(Map<String, String> loginMap) throws Exception {
 		return memberDao.login(loginMap);
 	}
+
+	@Override
+	public MemberDto getMemberInfo(String memberId) throws Exception {
+		return memberDao.selectMemberInfo(memberId);
+	}
 	
 }

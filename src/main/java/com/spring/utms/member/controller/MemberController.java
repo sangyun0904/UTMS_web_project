@@ -45,7 +45,7 @@ public class MemberController {
 			session.setAttribute("memberName", memberDto.getMemberName());
 			htmlBody += "<script>";
 			htmlBody += "alert('Welcome " + memberDto.getMemberName() + "!');";
-			htmlBody += "location.href='/utms/productList'";
+			htmlBody += "location.href='/productList'";
 			htmlBody += "</script>";
 		} 
 		else {
@@ -88,7 +88,7 @@ public class MemberController {
 
 		String message  = "<script>";
 			   message += " alert('회원가입되었습니다.');";
-			   message += " location.href='/utms/loginForm';";
+			   message += " location.href='/loginForm';";
 			   message += " </script>";
 	    
 	    HttpHeaders responseHeaders = new HttpHeaders();
@@ -99,8 +99,17 @@ public class MemberController {
 	}
 	
 	@RequestMapping(value="/profile", method=RequestMethod.GET)
-	public ModelAndView profile() throws Exception {
-		return new ModelAndView("/member/memberProfile");
+	public ModelAndView profile(HttpServletRequest request) throws Exception {
+		
+		HttpSession session = request.getSession();
+		
+		MemberDto memberDto = memberService.getMemberInfo((String)session.getAttribute("memberId"));
+		
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/member/memberProfile");
+		mv.addObject("memberDto", memberDto);
+		
+		return mv;
 	}
 	
 }
