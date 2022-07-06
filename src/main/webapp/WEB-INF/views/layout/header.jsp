@@ -29,7 +29,7 @@
 		<c:choose>
 			<c:when test="${sessionScope.memberId != null}">
 				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<a href="/utms/logout" class="btn btn-sm btn-danger mb-0 mx-2">logout!</a>
+					<a href="/logout" class="btn btn-sm btn-danger mb-0 mx-2">logout!</a>
 					<!-- Nav item 5 link-->
 					<ul class="navbar-nav navbar-nav-scroll ms-auto">
 							<li class="nav-item"> <a class="nav-link" href="/uploadProduct">물건 판매하기</a></li>
@@ -37,7 +37,7 @@
 					</ul>
 					<!-- Avatar -->
 					<div class="nav-item ms-2 ms-md-3 dropdown">
-						<a class="avatar avatar-sm p-0" href="/utms/profile" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+						<a class="avatar avatar-sm p-0" href="/profile" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
 							<img class="avatar-img rounded-circle" src="resources/images/avatar/03.jpg" alt="avatar">
 						</a>
 					</div>

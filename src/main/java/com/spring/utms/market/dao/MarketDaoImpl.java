@@ -50,8 +50,14 @@ public class MarketDaoImpl implements MarketDao{
 	}
 
 	@Override
-	public List<Map<String, Object>> selectAllComments(int num) {
-		return sqlSession.selectList("mapper.comment.getAllComments");
+	public List<Map<String, Object>> selectAllComments(int num) throws Exception {
+		return sqlSession.selectList("mapper.comment.getAllComments", num);
+	}
+
+	@Override
+	public List<ProductDto> selectSortedProducts(String category) throws Exception {
+		System.out.println(category);
+		return sqlSession.selectList("mapper.market.getSortedProducts", category);
 	}
 
 }

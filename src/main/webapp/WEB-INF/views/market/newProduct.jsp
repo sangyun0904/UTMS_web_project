@@ -282,7 +282,7 @@ Main contain START -->
                         <input type="radio" class="btn-check" name="productSort" id="option" value="house" checked>
                         <label class="btn btn-outline-light w-100" for="option">
                           <i class="bi bi-chat-left-text fs-1"></i>
-                          <span class="d-block"> 가전/가구/인테리 </span>
+                          <span class="d-block"> 가전/가구/인테리어 </span>
                         </label>
                       </div>
                       <!-- Post type item -->

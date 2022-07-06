@@ -47,7 +47,7 @@
 				PRODUCT_ID = #{num};
 	</select>
 	
-	<select id="getSortProducts" resultType="ProductDto">
+	<select id="getSortedProducts" parameterType="String" resultType="ProductDto" >
 		SELECT
 				*
 		FROM

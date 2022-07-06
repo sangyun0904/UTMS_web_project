@@ -32,7 +32,7 @@ Main content START -->
 									<!-- Card overlay bottom -->
 									<div class="w-100 mt-auto">
 										<!-- Card category -->
-										<a href="#" class="badge bg-warning mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Technology</a>
+										<a href="#" class="badge bg-warning mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>${product.productSort }</a>
 									</div>
 								</div>
 							</div>
@@ -266,36 +266,44 @@ Main content START -->
 						<!-- Category item -->
 						<div class="text-center mb-3 card-bg-scale position-relative overflow-hidden rounded" style="background-image:url(resources/images/blog/4by3/01.jpg); background-position: center left; background-size: cover;">
 							<div class="bg-dark-overlay-4 p-3">
-								<a href="#" class="stretched-link btn-link fw-bold text-white h5">Travel</a>
+								<a href="/sortedProduct?category=house" class="stretched-link btn-link fw-bold text-white h5">가전/가구/인테리어</a>
 							</div>
 						</div>
 						<!-- Category item -->
 						<div class="text-center mb-3 card-bg-scale position-relative overflow-hidden rounded" style="background-image:url(resources/images/blog/4by3/02.jpg); background-position: center left; background-size: cover;">
 							<div class="bg-dark-overlay-4 p-3">
-								<a href="#" class="stretched-link btn-link fw-bold text-white h5">Business</a>
+								<a href="/sortedProduct?category=sports" class="stretched-link btn-link fw-bold text-white h5">스포츠/레저</a>
 							</div>
 						</div>
 						<!-- Category item -->
 						<div class="text-center mb-3 card-bg-scale position-relative overflow-hidden rounded" style="background-image:url(resources/images/blog/4by3/03.jpg); background-position: center left; background-size: cover;">
 							<div class="bg-dark-overlay-4 p-3">
-								<a href="#" class="stretched-link btn-link fw-bold text-white h5">Marketing</a>
+								<a href="/sortedProduct?category=fashion" class="stretched-link btn-link fw-bold text-white h5">여성의류/남성패션/잡화</a>
 							</div>
 						</div>
 						<!-- Category item -->
 						<div class="text-center mb-3 card-bg-scale position-relative overflow-hidden rounded" style="background-image:url(resources/images/blog/4by3/04.jpg); background-position: center left; background-size: cover;">
 							<div class="bg-dark-overlay-4 p-3">
-								<a href="#" class="stretched-link btn-link fw-bold text-white h5">Photography</a>
+								<a href="/sortedProduct?category=beauty" class="stretched-link btn-link fw-bold text-white h5">뷰티/미용</a>
 							</div>
 						</div>
 						<!-- Category item -->
 						<div class="text-center mb-3 card-bg-scale position-relative overflow-hidden rounded" style="background-image:url(resources/images/blog/4by3/05.jpg); background-position: center left; background-size: cover;">
 							<div class="bg-dark-overlay-4 p-3">
-								<a href="#" class="stretched-link btn-link fw-bold text-white h5">Sports</a>
+								<a href="/sortedProduct?category=life" class="stretched-link btn-link fw-bold text-white h5">도서/티켓/음반</a>
 							</div>
 						</div>
-						<!-- View All Category button -->
-						<div class="text-center mt-3">
-							<a href="#" class="fw-bold text-muted text-primary-hover"><u>View all categories</u></a>
+						<!-- Category item -->
+						<div class="text-center mb-3 card-bg-scale position-relative overflow-hidden rounded" style="background-image:url(resources/images/blog/4by3/05.jpg); background-position: center left; background-size: cover;">
+							<div class="bg-dark-overlay-4 p-3">
+								<a href="/sortedProduct?category=babies" class="stretched-link btn-link fw-bold text-white h5">유아용품</a>
+							</div>
+						</div>
+						<!-- Category item -->
+						<div class="text-center mb-3 card-bg-scale position-relative overflow-hidden rounded" style="background-image:url(resources/images/blog/4by3/05.jpg); background-position: center left; background-size: cover;">
+							<div class="bg-dark-overlay-4 p-3">
+								<a href="/sortedProduct?category=others" class="stretched-link btn-link fw-bold text-white h5">기타</a>
+							</div>
 						</div>
 					</div>
 					<!-- Trending topics widget END -->

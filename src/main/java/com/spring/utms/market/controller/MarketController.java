@@ -51,6 +51,21 @@ public class MarketController {
 		return mv;
 	}
 	
+	@RequestMapping(value="/sortedProduct" , method=RequestMethod.GET)
+	public ModelAndView sortedProducts(String category) throws Exception {
+		ModelAndView mv = new ModelAndView();
+		
+		System.out.println(category);
+		
+		List<ProductDto> productList = marketService.getSortedProducts(category);
+		
+		System.out.println(productList);
+		mv.setViewName("/market/marketMain");
+		mv.addObject("productList", productList);
+		
+		return mv;
+	}
+	
 	@RequestMapping(value="/productInfo" , method=RequestMethod.GET)
 	public ModelAndView productInfo(int num) throws Exception {
 		

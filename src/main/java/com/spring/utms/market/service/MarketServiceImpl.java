@@ -37,8 +37,13 @@ public class MarketServiceImpl implements MarketService{
 	}
 
 	@Override
-	public List<Map<String, Object>> getComments(int num) {
+	public List<Map<String, Object>> getComments(int num)  throws Exception{
 		return marketDao.selectAllComments(num);
+	}
+
+	@Override
+	public List<ProductDto> getSortedProducts(String category) throws Exception {
+		return marketDao.selectSortedProducts(category);
 	}
 
 }
