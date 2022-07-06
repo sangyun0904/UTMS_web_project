@@ -37,7 +37,7 @@
 					</ul>
 					<!-- Avatar -->
 					<div class="nav-item ms-2 ms-md-3 dropdown">
-						<a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+						<a class="avatar avatar-sm p-0" href="/utms/profile" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
 							<img class="avatar-img rounded-circle" src="resources/images/avatar/03.jpg" alt="avatar">
 						</a>
 					</div>

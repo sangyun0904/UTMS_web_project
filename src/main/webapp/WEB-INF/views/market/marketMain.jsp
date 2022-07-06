@@ -319,21 +319,6 @@ Main content START -->
 </section>
 <!-- =======================
 Main content END -->
-<hr>
-<!-- =======================
-Inner intro START -->
-<section class="pt-4">
-	<div class="container">
-		<div class="row">
-      <div class="col-12">
-				<div class="bg-danger-soft p-4 text-center rounded-3" onclick="location.href='/protfolio/uploadProduct'">
-					<h1 class="text-danger m-0">Upload Product</h1>
-					<p class="lead m-0">sell product, earn money</p>
-				</div>
-      </div>
-    </div>
-	</div>
-</section>
 
 </main>
 </body>

@@ -98,4 +98,9 @@ public class MemberController {
 		
 	}
 	
+	@RequestMapping(value="/profile", method=RequestMethod.GET)
+	public ModelAndView profile() throws Exception {
+		return new ModelAndView("/member/memberProfile");
+	}
+	
 }

@@ -30,11 +30,11 @@ import net.coobird.thumbnailator.Thumbnails;
 @Controller
 public class MarketController {
 	
-	private static final String CURR_IMAGE_REPO_PATH = "C:\\file_repo";
-	String seperatorPath = "\\";	// window
+	//private static final String CURR_IMAGE_REPO_PATH = "C:\\file_repo";
+	//String seperatorPath = "\\";	// window
 
-	//private static final String CURR_IMAGE_REPO_PATH = "/var/lib/tomcat8/file_repo";
-	//String seperatorPath = "/";		// linux
+	private static final String CURR_IMAGE_REPO_PATH = "/var/lib/tomcat8/file_repo";
+	String seperatorPath = "/";		// linux
 	
 	@Autowired
 	private MarketService marketService;
@@ -65,16 +65,25 @@ public class MarketController {
 	}
 	
 	@RequestMapping(value="/productInfo" , method=RequestMethod.POST)
-	public ModelAndView productInfo(String content, String memberId, int productId) throws Exception {
+	public ModelAndView productInfo(String content, String memberId, int productId, HttpServletRequest request) throws Exception {
 		
 		int num = productId;
-		marketService.addComment(productId, content, memberId);
-		ProductDto productDto = marketService.getOneProduct(num);
 		
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("/market/productInfo");
-		mv.addObject("productDto", productDto);
-		mv.addObject("commentMapList", marketService.getComments(num));
+		HttpSession session = request.getSession();
+		
+		if (session.getAttribute("memberId") != null) {			
+			marketService.addComment(productId, content, memberId);
+			ProductDto productDto = marketService.getOneProduct(num);
+			
+			mv.setViewName("/market/productInfo");
+			mv.addObject("productDto", productDto);
+			mv.addObject("commentMapList", marketService.getComments(num));
+		}
+		else {
+			mv.setViewName("/member/loginForm");
+		}
+
 		
 		return mv;
 		
