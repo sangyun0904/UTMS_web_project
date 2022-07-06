@@ -30,11 +30,11 @@ import net.coobird.thumbnailator.Thumbnails;
 @Controller
 public class MarketController {
 	
-	private static final String CURR_IMAGE_REPO_PATH = "C:\\file_repo";
-	String seperatorPath = "\\";	// window
+	//private static final String CURR_IMAGE_REPO_PATH = "C:\\file_repo";
+	//String seperatorPath = "\\";	// window
 
-	//private static final String CURR_IMAGE_REPO_PATH = "/var/lib/tomcat8/file_repo";
-	//String seperatorPath = "/";		// linux
+	private static final String CURR_IMAGE_REPO_PATH = "/var/lib/tomcat8/file_repo";
+	String seperatorPath = "/";		// linux
 	
 	@Autowired
 	private MarketService marketService;
@@ -168,7 +168,7 @@ public class MarketController {
 		
 		File image = new File(filePath);
 		if (image.exists()) { 
-			Thumbnails.of(image).size(121,154).outputFormat("png").toOutputStream(out);
+			Thumbnails.of(image).size(180,200).outputFormat("png").toOutputStream(out);
 		}
 		byte[] buffer = new byte[1024 * 8];
 		out.write(buffer);
