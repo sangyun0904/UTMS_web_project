@@ -73,9 +73,9 @@ Main START -->
 				<div class="d-md-flex justify-content-between text-center text-md-start my-4">
 					<!-- Info -->
 					<ul class="nav nav-divider align-items-center justify-content-center justify-content-md-end">
-						<li class="nav-item"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i> 5 Comments</a></li>
-						<li class="nav-item"><i class="far fa-eye me-1"></i> 2344 Views</li>
-						<li class="nav-item"><a href="#"><i class="fas fa-heart me-1 text-danger"></i></a> 266</li>
+						<li class="nav-item"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i> ${productDto.productComments } Comments</a></li>
+						<li class="nav-item"><i class="far fa-eye me-1"></i> ${productDto.productViews } Views</li>
+						<li class="nav-item"><a href="#"><i class="fas fa-heart me-1 text-danger"></i></a> ${productDto.productLikes }</li>
 					</ul>
 				</div>
 				<!-- Tags and info END -->
@@ -215,7 +215,7 @@ Main START -->
 				<!-- Comments START -->
 				<div class="mt-5">
 				
-					<h3>5 comments</h3>
+					<h3>${productDto.productComments } comments</h3>
 					  <c:forEach var="commentMap" items="${commentMapList }">
 						<!-- Comment level 1-->
 						<div class="my-4 d-flex">
@@ -230,54 +230,6 @@ Main START -->
 						  </div>
 						</div>
 					  </c:forEach>
-						<!-- Comment children level 2 -->
-						<div class="my-4 d-flex ps-2 ps-md-3">
-						  <img class="avatar avatar-md rounded-circle float-start me-3" src="resources/images/avatar/02.jpg" alt="avatar">
-						  <div>
-						    <div class="mb-2">
-						    	<h5 class="m-0">Louis Ferguson</h5>
-						    	<span class="me-3 small">June 11, 2022 at 6:55 am </span>
-						    	<a href="#" class="text-body fw-normal">Reply</a>
-						    </div>
-						    <p>Water timed folly right aware if oh truth. Imprudence attachment him his for sympathize. Large above be to means. Dashwood does provide stronger is. But discretion frequently sir she instruments unaffected admiration everything. </p>
-						  </div>
-						</div>
-							<!-- Comment children level 3 -->
-							<div class="my-4 d-flex ps-3 ps-md-5">
-							  <img class="avatar avatar-md rounded-circle float-start me-3" src="resources/images/avatar/01.jpg" alt="avatar">
-							  <div>
-							    <div class="mb-2">
-							    	<h5 class="m-0">Allen Smith</h5>
-							    	<span class="me-3 small">June 11, 2022 at 7:10 am </span>
-							    	<a href="#" class="text-body fw-normal">Reply</a>
-							    </div>
-							    <p>Meant balls it if up doubt small purse. </p>
-							  </div>
-							</div>
-						<!-- Comment level 2 -->
-						<div class="my-4 d-flex ps-2 ps-md-3">
-						  <img class="avatar avatar-md rounded-circle float-start me-3" src="resources/images/avatar/03.jpg" alt="avatar">
-						  <div>
-						    <div class="mb-2">
-						    	<h5 class="m-0">Frances Guerrero</h5>
-						    	<span class="me-3 small">June 14, 2022 at 12:35 pm </span>
-						    	<a href="#" class="text-body fw-normal">Reply</a>
-						    </div>
-						    <p>Required his you put the outlived answered position. A pleasure exertion if believed provided to. All led out world this music while asked. Paid mind even sons does he door no. Attended overcame repeated it is perceived Marianne in. I think on style child of. Servants moreover in sensible it ye possible. </p>
-						  </div>
-						</div>
-					<!-- Comment level 1 -->
-					<div class="my-4 d-flex">
-					  <img class="avatar avatar-md rounded-circle float-start me-3" src="resources/images/avatar/04.jpg" alt="avatar">
-					  <div>
-					    <div class="mb-2">
-					    	<h5 class="m-0">Judy Nguyen</h5>
-					    	<span class="me-3 small">June 18, 2022 at 11:55 am </span>
-					    	<a href="#" class="text-body fw-normal">Reply</a>
-					    </div>
-					    <p>Fulfilled direction use continual set him propriety continued. Saw met applauded favorite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. </p>
-					  </div>
-					</div>
 
 				</div>
 				<!-- Comments END -->

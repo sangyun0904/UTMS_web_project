@@ -65,4 +65,13 @@
 				PRODUCT_ID = #{num};
 	</update>
 	
+	<update id="increaseComments" parameterType="int">
+		UPDATE
+				T_PRODUCT
+		SET
+				PRODUCT_COMMENTS = PRODUCT_COMMENTS + 1
+		WHERE
+				PRODUCT_ID = #{productId}
+	</update>
+	
 </mapper>

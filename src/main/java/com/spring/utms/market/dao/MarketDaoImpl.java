@@ -60,4 +60,9 @@ public class MarketDaoImpl implements MarketDao{
 		return sqlSession.selectList("mapper.market.getSortedProducts", category);
 	}
 
+	@Override
+	public void updateComments(int productId) throws Exception {
+		sqlSession.update("mapper.market.increaseComments", productId);
+	}
+
 }

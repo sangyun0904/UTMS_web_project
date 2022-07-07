@@ -33,6 +33,7 @@ public class MarketServiceImpl implements MarketService{
 
 	@Override
 	public void addComment(int productId, String content, String memberId) throws Exception {
+		marketDao.updateComments(productId);
 		marketDao.insertComment(productId, content, memberId);	
 	}
 

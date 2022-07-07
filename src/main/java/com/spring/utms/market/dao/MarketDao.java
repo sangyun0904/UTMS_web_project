@@ -14,5 +14,6 @@ public interface MarketDao {
 	public void insertComment(int productId, String content, String memberId) throws Exception;
 	public List<Map<String, Object>> selectAllComments(int num) throws Exception;
 	public List<ProductDto> selectSortedProducts(String category) throws Exception;
+	public void updateComments(int productId) throws Exception;
 
 }
