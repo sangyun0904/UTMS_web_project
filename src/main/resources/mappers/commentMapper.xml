@@ -7,6 +7,7 @@
  		<result column="MEMBER_NAME"	 property="memberName"/>
  		<result column="COMMENT_CONTENT" property="commentContent"/>
  		<result column="COMMENT_LIKES"	 property="commentLikes"/>
+ 		<result column="COMMENT_CREDATE"	 property="commentCredate"/>
  	</resultMap>
 	
 	<insert id="insertNewComment" parameterType="hashmap">
@@ -15,21 +16,24 @@
 					MEMBER_ID,
 					PRODUCT_ID,
 					COMMENT_CONTENT,
-					COMMENT_LIKES
+					COMMENT_LIKES,
+					COMMENT_CREDATE
 				)
 				VALUES (
 					#{memberId},
 					#{productId},
 					#{content},
-					0
-				)
+					0,
+					NOW()
+				);
 	</insert>
 	
 	<select id="getAllComments" resultMap="comment_info" parameterType="int">
 		SELECT
 				M.MEMBER_NAME,
 				C.COMMENT_CONTENT,
-				C.COMMENT_LIKES
+				C.COMMENT_LIKES,
+				C.COMMENT_CREDATE
 		FROM
 				T_COMMENT AS C
 			   INNER JOIN T_MEMBER AS M

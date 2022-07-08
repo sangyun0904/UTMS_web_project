@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,7 +55,7 @@ Inner intro START -->
 				<span class="ms-2 small">Updated: 15 April 2022 07:30 IST</span>
 				<h1 class="display-6">${productDto.productName }</h1>
 				<p class="lead">${productDto.productDesc }</p>
-				<p>${productDto.productPrice } 원</p>
+				<h3>${productDto.productPrice } 원</h3>
 			</div>			 
 		</div>
 	</div>
@@ -223,8 +224,7 @@ Main START -->
 						  <div>
 						    <div class="mb-2">
 						    	<h5 class="m-0"> ${commentMap.memberName } </h5>
-						    	<span class="me-3 small">June 11, 2022 at 6:01 am </span>
-						    	<a href="#" class="text-body fw-normal">Reply</a>
+						    	<span class="me-3 small"><fmt:formatDate value="${commentMap.commentCredate }" type="both"/> </span>
 						    </div>
 						    <p> ${commentMap.commentContent } </p>
 						  </div>
