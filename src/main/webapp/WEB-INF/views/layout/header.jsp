@@ -3,12 +3,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Blogzine - Blog and Magazine Bootstrap 5 Theme</title>
+	<title>header</title>
 </head>
 
 <body>
 
-	<header class="navbar-light navbar-sticky header-static">
+	<header>
 	<!-- Logo Nav START -->
 	<nav class="navbar navbar-expand-lg">
 		<div class="container">
@@ -51,20 +51,19 @@
 			</c:otherwise>
 		</c:choose>
 				<!-- Nav Search -->
+				<input type="text">
 				<div class="nav-item dropdown nav-search dropdown-toggle-icon-none">
 					<a class="nav-link pe-0 dropdown-toggle" role="button" href="#" id="navSearch" data-bs-toggle="dropdown" aria-expanded="false">
 						<i class="bi bi-search fs-4"> </i>
 					</a>
-					<div class="dropdown-menu dropdown-menu-end shadow rounded p-2" aria-labelledby="navSearch">
-					  <form class="input-group">
-					    <input class="form-control border-success" type="search" placeholder="Search" aria-label="Search">
-					    <button class="btn btn-success m-0" type="submit">Search</button>
-					  </form>
-					</div>
 				</div>
 			</div>
 			<!-- Nav right END -->
 	</nav>
 	<!-- Logo Nav END -->
+	<div align="right" style="margin:10px; padding:5px; background-color: orange">
+	<input type="button" value="게시판">
+	<input type="button" value="중고거래">
+	</div>
 </header>
 </body>

@@ -8,10 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<main><br><br>
-
-<!-- =======================
-Inner intro END -->
+<main>
+<br><br>
 
 <!-- =======================
 Main content START -->
