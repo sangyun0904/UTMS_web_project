@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.OutputStream;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
@@ -42,7 +43,13 @@ public class MarketController {
 	@RequestMapping(value="/productList" , method=RequestMethod.GET)
 	public ModelAndView productList() throws Exception {
 		
-		List<ProductDto> productList = marketService.getProductList();
+		List<Map<String, Object>> productList = marketService.getProductList();
+		
+		for (Map<String, Object> map : productList) {
+			if (((String)map.get("productDesc")).length() > 140) {
+				map.put("productDesc", ((String)map.get("productDesc")).substring(0, 140) + " ...");
+			}
+		}
 		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/market/marketMain");
@@ -57,7 +64,13 @@ public class MarketController {
 		
 		System.out.println(category);
 		
-		List<ProductDto> productList = marketService.getSortedProducts(category);
+		List<Map<String, Object>> productList = marketService.getSortedProducts(category);
+		
+		for (Map<String, Object> map : productList) {
+			if (((String)map.get("productDesc")).length() > 140) {
+				map.put("productDesc", ((String)map.get("productDesc")).substring(0, 140) + " ...");
+			}
+		}
 		
 		System.out.println(productList);
 		mv.setViewName("/market/marketMain");
@@ -127,7 +140,7 @@ public class MarketController {
 		productDto.setProductPrice(productPrice);
 		productDto.setProductDesc(multipartRequest.getParameter("productDesc"));
 		productDto.setProductSort(multipartRequest.getParameter("productSort"));
-		productDto.setProductSeller((String)session.getAttribute("memberInfo"));
+		productDto.setProductSeller((String)session.getAttribute("memberId"));
 		
 		Iterator<String> file = multipartRequest.getFileNames();
 		if (file.hasNext()) {

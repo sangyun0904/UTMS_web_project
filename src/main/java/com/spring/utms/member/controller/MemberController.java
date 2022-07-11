@@ -71,7 +71,7 @@ public class MemberController {
 		session.setAttribute("isLogOn", false);
 		session.invalidate(); 
 		
-		mv.setViewName("/member/marketMain");
+		mv.setViewName("/marketMain");
 		
 		return mv;
 		

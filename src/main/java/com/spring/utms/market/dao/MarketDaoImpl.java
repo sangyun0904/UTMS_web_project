@@ -22,8 +22,8 @@ public class MarketDaoImpl implements MarketDao{
 	}
 
 	@Override
-	public List<ProductDto> selectProductList() throws Exception {
-		List<ProductDto> productList = sqlSession.selectList("mapper.market.getAllProducts");
+	public List<Map<String, Object>> selectProductList() throws Exception {
+		List<Map<String, Object>> productList = sqlSession.selectList("mapper.market.getAllProducts");
 		return productList;
 	}
 
@@ -55,8 +55,7 @@ public class MarketDaoImpl implements MarketDao{
 	}
 
 	@Override
-	public List<ProductDto> selectSortedProducts(String category) throws Exception {
-		System.out.println(category);
+	public List<Map<String, Object>> selectSortedProducts(String category) throws Exception {
 		return sqlSession.selectList("mapper.market.getSortedProducts", category);
 	}
 

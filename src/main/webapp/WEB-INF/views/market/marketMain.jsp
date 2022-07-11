@@ -45,7 +45,7 @@ Main content START -->
 												<div class="avatar avatar-xs">
 													<img class="avatar-img rounded-circle" src="resources/images/avatar/08.jpg" alt="avatar">
 												</div>
-												<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link"><c:out value="${sessionScope.memberName}"/></a></span>
+												<span class="ms-3">by <a href="#" class="stretched-link text-reset btn-link"><c:out value="${product.memberName}"/></a></span>
 											</div>
 										</div>
 									</li>

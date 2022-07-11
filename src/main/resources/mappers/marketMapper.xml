@@ -2,6 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="mapper.market">
+
+ 	<resultMap type="Hashmap" id="product_info">
+ 		<result column="PRODUCT_NAME"	 property="productName"/>
+ 		<result column="MEMBER_NAME" property="memberName"/>
+ 		<result column="PRODUCT_PRICE"	 property="productPrice"/>
+ 		<result column="PRODUCT_DESC"	 property="productDesc"/>
+ 		<result column="PRODUCT_IMAGES"	 property="productImages"/>
+ 		<result column="PRODUCT_CREDATE"	 property="productCredate"/>
+ 		<result column="PRODUCT_VIEWS"	 property="productViews"/>
+ 		<result column="PRODUCT_COMMENTS"	 property="productComments"/>
+ 		<result column="PRODUCT_LIKES"	 property="productLikes"/>
+ 	</resultMap>
 	
 	<insert id="insertNewProduct" parameterType="productDto">
 		INSERT INTO
@@ -31,11 +43,22 @@
 				);
 	</insert>
 	
-	<select id="getAllProducts" resultType="ProductDto">
+	<select id="getAllProducts" resultMap="product_info">
 		SELECT
-				*
+				P.PRODUCT_NAME,
+				M.MEMBER_NAME,
+				P.PRODUCT_PRICE,
+				P.PRODUCT_SORT,
+				P.PRODUCT_DESC,
+				P.PRODUCT_IMAGES,
+				P.PRODUCT_CREDATE,
+				P.PRODUCT_COMMENTS,
+				P.PRODUCT_VIEWS,
+				P.PRODUCT_LIKES
 		FROM
-				T_PRODUCT;
+				T_PRODUCT AS P
+			   INNER JOIN T_MEMBER AS M
+			   		   ON P.PRODUCT_SELLER = M.MEMBER_ID;
 	</select>
 	
 	<select id="getOneProduct" parameterType="int" resultType="ProductDto">
@@ -47,11 +70,22 @@
 				PRODUCT_ID = #{num};
 	</select>
 	
-	<select id="getSortedProducts" parameterType="String" resultType="ProductDto" >
+	<select id="getSortedProducts" parameterType="String" resultMap="product_info" >
 		SELECT
-				*
+				P.PRODUCT_NAME,
+				M.MEMBER_NAME,
+				P.PRODUCT_PRICE,
+				P.PRODUCT_SORT,
+				P.PRODUCT_DESC,
+				P.PRODUCT_IMAGES,
+				P.PRODUCT_CREDATE,
+				P.PRODUCT_COMMENTS,
+				P.PRODUCT_VIEWS,
+				P.PRODUCT_LIKES
 		FROM
-				T_PRODUCT
+				T_PRODUCT AS P
+			   INNER JOIN T_MEMBER AS M
+			   		   ON P.PRODUCT_SELLER = M.MEMBER_ID
 		WHERE
 				PRODUCT_SORT = #{category};
 	</select>
