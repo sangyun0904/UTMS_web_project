@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,6 +26,9 @@ public class MemberController {
 	
 	@Autowired
 	private MemberService memberService;
+	
+	@Autowired
+	private BCryptPasswordEncoder passwordEncoder;
 	
 	@RequestMapping(value="/loginForm" , method=RequestMethod.GET)
 	public ModelAndView login() throws Exception {
@@ -83,6 +87,8 @@ public class MemberController {
 		
 		if (memberDto.getEmailstsYn() == null)  memberDto.setEmailstsYn("N");
 		if (memberDto.getSmsstsYn() == null)    memberDto.setSmsstsYn("N");
+		
+		memberDto.setMemberPw(passwordEncoder.encode(memberDto.getMemberPw()));
 		
 		memberService.addMember(memberDto);
 

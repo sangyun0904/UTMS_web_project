@@ -42,7 +42,7 @@
 		FROM
 				T_MEMBER
 		WHERE
-				MEMBER_ID = #{memberId} AND MEMBER_PW = #{memberPw};
+				MEMBER_ID = #{memberId};
 	</select>
 	
 	<select id="getMemberInfo" resultType="MemberDto">
