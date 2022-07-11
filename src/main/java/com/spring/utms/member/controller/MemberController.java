@@ -63,17 +63,18 @@ public class MemberController {
 	}
 	
 	@RequestMapping(value="/logout" , method=RequestMethod.GET)
-	public ModelAndView logout(HttpServletRequest request) throws Exception {
+	public @ResponseBody String logout(HttpServletRequest request) throws Exception {
 		
-		ModelAndView mv = new ModelAndView();
+		String htmlBody = "";
 		HttpSession session = request.getSession();
 		
 		session.setAttribute("isLogOn", false);
 		session.invalidate(); 
+		htmlBody += "<script>";
+		htmlBody += "location.href='/productList'";
+		htmlBody += "</script>";
 		
-		mv.setViewName("/marketMain");
-		
-		return mv;
+		return htmlBody;
 		
 	}
 

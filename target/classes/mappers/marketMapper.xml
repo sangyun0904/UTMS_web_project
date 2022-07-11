@@ -4,6 +4,7 @@
 <mapper namespace="mapper.market">
 
  	<resultMap type="Hashmap" id="product_info">
+ 		<result column="PRODUCT_ID"	 property="productId"/>
  		<result column="PRODUCT_NAME"	 property="productName"/>
  		<result column="MEMBER_NAME" property="memberName"/>
  		<result column="PRODUCT_PRICE"	 property="productPrice"/>
@@ -45,6 +46,7 @@
 	
 	<select id="getAllProducts" resultMap="product_info">
 		SELECT
+				P.PRODUCT_ID,
 				P.PRODUCT_NAME,
 				M.MEMBER_NAME,
 				P.PRODUCT_PRICE,
@@ -72,6 +74,7 @@
 	
 	<select id="getSortedProducts" parameterType="String" resultMap="product_info" >
 		SELECT
+				P.PRODUCT_ID,
 				P.PRODUCT_NAME,
 				M.MEMBER_NAME,
 				P.PRODUCT_PRICE,
