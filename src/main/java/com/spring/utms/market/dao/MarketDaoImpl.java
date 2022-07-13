@@ -64,4 +64,9 @@ public class MarketDaoImpl implements MarketDao{
 		sqlSession.update("mapper.market.increaseComments", productId);
 	}
 
+	@Override
+	public List<Map<String, Object>> selectSearchProducts(String searchWord) throws Exception {
+		return sqlSession.selectList("mapper.market.getSearchProducts", searchWord);
+	}
+
 }

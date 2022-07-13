@@ -6,6 +6,24 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<script>
+	
+	$().ready(function(){
+		
+		$('#getSearchResult').click(function(){
+			
+			var searchWord = $("#searchWord").val();
+			var url = "/productList?";
+					url += "searchWord=" + searchWord;
+					
+					location.href=url;
+			
+		})
+		
+	})
+	
+</script>
 </head>
 <body>
 <main>
@@ -258,6 +276,12 @@ Main content START -->
 			<!-- Sidebar START -->
 			<div class="col-lg-3 mt-5 mt-lg-0">
 				<div data-sticky data-margin-top="80" data-sticky-for="767">
+					<!-- Nav Search -->
+					<input type="text" id="searchWord" value="${searchWord }"> &emsp;
+					<input type="button" value="search" id="getSearchResult">
+					<br><br><br>
+					</div>
+					<!-- Nav right END -->
 					<!-- Trending topics widget START -->
 					<div>
 						<h4 class="mb-3">Trending topics</h4>

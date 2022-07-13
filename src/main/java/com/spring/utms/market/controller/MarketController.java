@@ -41,9 +41,9 @@ public class MarketController {
 	private MarketService marketService;
 	
 	@RequestMapping(value="/productList" , method=RequestMethod.GET)
-	public ModelAndView productList() throws Exception {
+	public ModelAndView productList(@RequestParam(name="searchWord" , defaultValue = "") String searchWord) throws Exception {
 		
-		List<Map<String, Object>> productList = marketService.getProductList();
+		List<Map<String, Object>> productList = marketService.getSearchProducts(searchWord);
 		
 		for (Map<String, Object> map : productList) {
 			if (((String)map.get("productDesc")).length() > 140) {

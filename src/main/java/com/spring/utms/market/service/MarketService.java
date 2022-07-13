@@ -13,5 +13,6 @@ public interface MarketService {
 	public void addComment(int productId, String content, String memberId) throws Exception;
 	public List<Map<String, Object>> getComments(int num) throws Exception;
 	public List<Map<String, Object>> getSortedProducts(String category) throws Exception;
+	public List<Map<String, Object>> getSearchProducts(String searchWord) throws Exception;
 
 }

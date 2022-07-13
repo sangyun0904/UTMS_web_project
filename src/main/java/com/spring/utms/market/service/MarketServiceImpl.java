@@ -47,4 +47,9 @@ public class MarketServiceImpl implements MarketService{
 		return marketDao.selectSortedProducts(category);
 	}
 
+	@Override
+	public List<Map<String, Object>> getSearchProducts(String searchWord) throws Exception {
+		return marketDao.selectSearchProducts(searchWord);
+	}
+
 }

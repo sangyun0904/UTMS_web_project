@@ -111,4 +111,26 @@
 				PRODUCT_ID = #{productId}
 	</update>
 	
+	<select id="getSearchProducts" parameterType="String" resultMap="product_info">
+		SELECT
+				P.PRODUCT_ID,
+				P.PRODUCT_NAME,
+				M.MEMBER_NAME,
+				P.PRODUCT_PRICE,
+				P.PRODUCT_SORT,
+				P.PRODUCT_DESC,
+				P.PRODUCT_IMAGES,
+				P.PRODUCT_CREDATE,
+				P.PRODUCT_COMMENTS,
+				P.PRODUCT_VIEWS,
+				P.PRODUCT_LIKES
+		FROM
+				T_PRODUCT AS P
+			   INNER JOIN T_MEMBER AS M
+			   		   ON P.PRODUCT_SELLER = M.MEMBER_ID
+		WHERE
+				PRODUCT_NAME LIKE CONCAT('%',#{searchWord},'%') OR 
+				PRODUCT_DESC LIKE CONCAT('%',#{searchWord},'%');
+	</select>
+	
 </mapper>

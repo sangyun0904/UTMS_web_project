@@ -50,15 +50,7 @@
 				</div>
 			</c:otherwise>
 		</c:choose>
-				<!-- Nav Search -->
-				<input type="text">
-				<div class="nav-item dropdown nav-search dropdown-toggle-icon-none">
-					<a class="nav-link pe-0 dropdown-toggle" role="button" href="#" id="navSearch" data-bs-toggle="dropdown" aria-expanded="false">
-						<i class="bi bi-search fs-4"> </i>
-					</a>
-				</div>
-			</div>
-			<!-- Nav right END -->
+
 	</nav>
 	<!-- Logo Nav END -->
 	<div align="right" style="margin:10px; padding:5px; background-color: orange">
