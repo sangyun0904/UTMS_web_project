@@ -53,9 +53,5 @@
 
 	</nav>
 	<!-- Logo Nav END -->
-	<div align="right" style="margin:10px; padding:5px; background-color: orange">
-	<input type="button" value="게시판">
-	<input type="button" value="중고거래">
-	</div>
 </header>
 </body>

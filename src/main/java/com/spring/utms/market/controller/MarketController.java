@@ -181,7 +181,7 @@ public class MarketController {
 		
 		File image = new File(filePath);
 		if (image.exists()) { 
-			Thumbnails.of(image).size(180,200).outputFormat("png").toOutputStream(out);
+			Thumbnails.of(image).size(500,600).outputFormat("png").toOutputStream(out);
 		}
 		byte[] buffer = new byte[1024 * 8];
 		out.write(buffer);
