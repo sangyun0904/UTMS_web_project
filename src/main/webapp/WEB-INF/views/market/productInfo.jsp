@@ -240,21 +240,6 @@ Main START -->
 					<form class="row g-3 mt-2" method="post">
 					  <input type="hidden" name="productId" value="${productDto.productId }">
 					  <input type="hidden" name="memberId" value="<c:out value="${sessionScope.memberId}"/>">
-					  <div class="col-md-6">
-					    <label class="form-label">Name *</label>
-					    <input type="text" class="form-control" aria-label="First name">
-					  </div>
-					  <div class="col-md-6">
-					    <label class="form-label">Email *</label>
-					    <input type="email" class="form-control">
-					  </div>
-					  <!-- custom checkbox -->
-						<div class="col-md-12">
-							<div class="form-check">
-							  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-							  <label class="form-check-label" for="flexCheckDefault">Save my name and email in this browser for the next time I comment. </label>
-							</div>
-						</div>
 					  <div class="col-12">
 					    <label class="form-label">Your Comment *</label>
 					  	<textarea class="form-control" rows="3" name="content"></textarea>
