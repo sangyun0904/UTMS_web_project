@@ -32,7 +32,7 @@ import net.coobird.thumbnailator.Thumbnails;
 public class MarketController {
 	
 	private static final String CURR_IMAGE_REPO_PATH = "C:\\file_repo";
-	String seperatorPath = "\\";	// window
+	String seperatorPath = "\\";	// window, mac
 
 	//private static final String CURR_IMAGE_REPO_PATH = "/var/lib/tomcat8/file_repo";
 	//String seperatorPath = "/";		// linux

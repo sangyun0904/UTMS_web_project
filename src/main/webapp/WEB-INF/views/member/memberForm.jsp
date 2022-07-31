@@ -30,36 +30,37 @@
 
 <script>
 
+	$("form").submit(function( event ){
+		
+	    var memberId = $("#memberId").val();
+	   
+	    if (memberId == ''){
+	   		alert("ID를 입력하세요");
+	   		event.preventDefault;
+	    }
+	   
+	    $.ajax({
+	       type : "get",
+	       url  : "${contextPath}/member/overlapped",
+	       data : {"memberId" : memberId},
+	       success : function (data){
+	          if (data == 'false'){
+				  return true;
+	          }
+	          else {
+	          	  alert("이미 등록된 ID입니다.");
+	  	   		  event.preventDefault;
+	          }
+	       }
+	    });
+	    
+	 });
+
 	$().ready(function() {
 	
 		$("#select_email").change(function(){
 			$("#email2").val($("#select_email option:selected").val());
-		});
-		
-		$("#btnOverlapped").click(function(){
-			
-		    var memberId = $("#memberId").val();
-		   
-		    if (memberId == ''){
-		   		alert("ID를 입력하세요");
-		   		return;
-		    }
-		   
-		    $.ajax({
-		       type : "get",
-		       url  : "${contextPath}/member/overlapped",
-		       data : {"memberId" : memberId},
-		       success : function (data){
-		          if (data == 'false'){
-					  alert("사용할 수 있는 ID입니다.");
-		          }
-		          else {
-		          	  alert("사용할 수 없는 ID입니다.");
-		          }
-		       }
-		    });
-		    
-		 });	
+		});	
 		
 	});
 </script>
@@ -170,35 +171,17 @@ Inner intro START -->
 							<input class="custom-control-input" id="smsstsYn" type="checkbox" name="smsstsYn"  value="Y" checked/>
 			                <label for="smsstsYn" >BMS에서 발송하는 SMS 소식을 수신합니다.</label>
 			        </div>                                                                               			
-						<!-- Checkbox -->
-						<div class="mb-3 form-check">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Yes i'd also like to sign up for additional subscription</label>
-						</div>
 						<!-- Button -->
 						<div class="row align-items-center">
 							<div class="col-sm-4">
 								<button type="submit" class="btn btn-success">Sign me up</button>
 							</div>
 							<div class="col-sm-8 text-sm-end">
-								<span>Have an account? <a href="signin.html"><u>Sign in</u></a></span>
+								<span>Have an account? <a href="/loginForm"><u>Sign in</u></a></span>
 							</div>
 						</div>
 					</form>
 					<!-- Form END -->
-					<hr>
-					<!-- Social-media btn -->
-					<div class="text-center">
-						<p>Sign up with your social network for quick access</p>
-						<ul class="list-unstyled d-sm-flex mt-3 justify-content-center">
-							<li class="mx-2">
-								<a href="#" class="btn bg-facebook d-inline-block"><i class="fab fa-facebook-f me-2"></i> Sign up with Facebook</a>
-							</li>
-							<li class="mx-2">
-								<a href="#" class="btn bg-google d-inline-block"><i class="fab fa-google me-2"></i> Sign up with google</a>
-							</li>
-						</ul>
-					</div>
         </div>
       </div>
     </div>
